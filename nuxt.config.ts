@@ -16,7 +16,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
     '@nuxtjs/color-mode',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxtjs/i18n',
+    '@nuxt/fonts'
   ],
   primevue: {
     options: {
@@ -31,6 +33,17 @@ export default defineNuxtConfig({
         }
       },
       ripple: true,
+    },
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    locales: [
+      { code: 'en', language: 'en-US', },
+      { code: 'es', language: 'es-MX', }
+    ],
+    defaultLocale: 'en',
+    bundle: {
+      optimizeTranslationDirective: false,
     },
   },
   colorMode: {
