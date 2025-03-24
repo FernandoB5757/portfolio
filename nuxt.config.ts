@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@nuxtjs/i18n',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxt/image',
   ],
   primevue: {
     options: {
@@ -48,6 +49,9 @@ export default defineNuxtConfig({
   },
   colorMode: {
 
+  },
+  image: {
+    format: ['webp']
   },
   runtimeConfig: {
     serverToken: process.env.SERVER_TOKEN,
