@@ -1,46 +1,78 @@
 <template>
-    <Drawer v-model:visible="showMenu" header="Red Plug">
-        <div>
+    <div>
 
-            <Button label="About" text plain active fluid />
-                <Button label="Services" text plain fluid />
-                <Button label="Pricing" text plain fluid />
-        </div>
-    </Drawer>
-    <Toolbar>
-        <template #start>
-            <Button rounded outlined class="px-8 hidden md:block">
-                Red Plug
-            </Button>
-            <Button type="button" severity="secondary" class="block md:hidden" @click="showMenu = true">
-                <template #icon>
-                    <Icon name="heroicons:bars-3" />
-                </template>
-            </Button>
-            <div class="hidden md:flex gap-x-2 ms-5">
-                <Button label="About" text plain active />
-                <Button label="Services" text plain />
-                <Button label="Pricing" text plain />
+        <Drawer v-model:visible="showMenu">
+            <template #header>
+                <div class="flex items-center gap-2">
+                    <Avatar image="/images/me-xl.png" 
+                        class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                        size="xlarge" 
+                        shape="circle" 
+                    />
+                    <p class="text-xl font-bold">
+                        Fernando Barajas
+                    </p>
+                </div>
+            </template>
+            <p class="description">
+                Inbio is a all in one personal portfolio WordPress theme. You can customize everything.
+            </p>
+            <div class="border-b border-gray-300 dark:border-gray-500 mt-3"></div>
+            <AppMenu/>
+            <template #footer>
+                <div class="flex items-center gap-2">
+                </div>
+            </template>
+        </Drawer>
+
+        <header class="py-2 sticky top-0 transition-colors duration-500 z-20 bg-surface-100 dark:bg-surface-900">
+            <div class="container mx-auto">
+                <nav class="flex justify-between p-2 items-center">
+                    <Avatar image="/images/me-xl.png" 
+                        class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                        size="xlarge" 
+                        shape="circle" 
+                    />
+                    <div class="flex items-end">
+                        <div class="block md:hidden">
+                            <Button text 
+                                size="large" 
+                                @click="toggleMenu" 
+                                severity="secondary" 
+                                :aria-label="$t('openmenu')"
+                            >
+                                <Icon name="heroicons:bars-3" class="text-2xl"/>
+                            </Button>
+                        </div>                        
+                        <div class="hidden md:block">
+                            <AppMenu />
+                        </div>
+                        <div class="block">
+                            <DarkModeSwitch />
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </template>
-
-        <template #center>
-            <Button rounded outlined class=" px-4 sm:px-8 block md:hidden">
-                Red Plug
-            </Button>
-            
-        </template>
-
-        <template #end>
-            <div class="flex items-center gap-2">
-                <DarkModeSwitch />
-            </div>
-        </template>
-    </Toolbar>
+        </header>
+    </div>
 </template>
 
 <script setup lang="ts">
 
 const showMenu = ref(false)
 
+const toggleMenu = () => {
+    showMenu.value = !showMenu.value
+}
+
 </script>
+
+<style scoped>
+
+p.description {
+    font-size: 16px;
+    line-height: 32px;
+    padding-right: 7%;
+}
+
+</style>

@@ -1,0 +1,18 @@
+<template>
+    <ul class="flex flex-col md:flex-row gap-x-4 font-serif items-start  uppercase">
+        <li class="w-full md:w-auto">
+            <Button as="router-link" 
+                label="Router" 
+                :to="localePath('index')" 
+                text 
+                size="large" 
+                class="w-full md:w-auto justify-start"
+            >
+                {{ $t('home') }}
+            </Button>
+        </li>
+    </ul>
+</template>
+<script setup lang="ts">
+const localePath = useLocalePath()
+</script>
