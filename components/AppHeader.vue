@@ -15,7 +15,7 @@
                 </div>
             </template>
             <p class="description">
-                Inbio is a all in one personal portfolio WordPress theme. You can customize everything.
+                PHP Developer, Web Developer, Full Stack Developer, Software Engineer
             </p>
             <div class="border-b border-gray-300 dark:border-gray-500 mt-3"></div>
             <AppMenu/>
@@ -25,14 +25,18 @@
             </template>
         </Drawer>
 
-        <header class="py-2 sticky top-0 transition-colors duration-500 z-20 bg-surface-100 dark:bg-surface-900">
+        <header class="py-2 sticky top-0 transition-colors duration-500 z-50 " 
+            :class="{'bg-surface-100 dark:bg-surface-900': showHeaderBackground}"
+        >
             <div class="container mx-auto">
                 <nav class="flex justify-between p-2 items-center">
-                    <Avatar image="/images/me-xl.png" 
-                        class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
-                        size="xlarge" 
-                        shape="circle" 
-                    />
+                    <div>
+                        <Avatar image="/images/me-xl.png" 
+                            class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                            size="xlarge" 
+                            shape="circle" 
+                        />
+                    </div>
                     <div class="flex items-end">
                         <div class="block md:hidden">
                             <Button text 
@@ -58,12 +62,25 @@
 </template>
 
 <script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
+
+
+const { y: verticalWindowScroll } = useWindowScroll()
 
 const showMenu = ref(false)
+
+const showHeaderBackground = ref(false)
+
+const scrollThreshold = ref(50)
 
 const toggleMenu = () => {
     showMenu.value = !showMenu.value
 }
+
+watch(verticalWindowScroll, async (value: number) => {
+    console.log(value)
+    showHeaderBackground.value = value > scrollThreshold.value
+})
 
 </script>
 

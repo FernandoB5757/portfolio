@@ -3,6 +3,8 @@
         severity="secondary" 
         @click="changeTheme" 
         size="large"
+        variant="text" 
+        rounded
     >
         <template #icon>
             <Icon :name="selectedTheme.icon" />

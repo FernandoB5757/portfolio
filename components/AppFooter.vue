@@ -3,7 +3,7 @@
         <div class="container flex flex-col mx-auto">
             <div class="flex flex-col items-center w-full my-20">
                 <span class="mb-8 text-primary text-3xl font-semibold">
-                    Red Plug
+                    JFGB
                 </span>
                 <div class="flex flex-col items-center gap-6 mb-8">
                     <div
