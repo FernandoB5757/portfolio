@@ -23,6 +23,7 @@
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
     "primevue": "^4.1.0",
+    "simplex-noise": "^4.0.3",
     "tailwindcss-primeui": "^0.3.4",
     "vue": "latest",
     "vue-router": "latest"
