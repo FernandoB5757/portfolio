@@ -29,6 +29,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@iconify-json/fa6-brands": "^1.2.5",
+    "@iconify-json/heroicons": "^1.2.2",
     "@inspira-ui/plugins": "^0.0.1",
     "@primevue/nuxt-module": "^4.1.0",
     "class-variance-authority": "^0.7.1",
