@@ -78,7 +78,6 @@ const toggleMenu = () => {
 }
 
 watch(verticalWindowScroll, async (value: number) => {
-    console.log(value)
     showHeaderBackground.value = value > scrollThreshold.value
 })
 
