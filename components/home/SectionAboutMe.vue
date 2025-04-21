@@ -1,0 +1,267 @@
+<template>
+    <div class="min-h-[89vh] flex flex-col md:flex-row items-center container px-2 lg:px-0 mx-auto gap-x-4">
+      <div class="flex flex-col items-center w-full md:w-1/2">
+        <div
+            class="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background "
+        >
+            <span class="pointer-events-none text-center font-semibold leading-none">
+                <Icon
+                    name="gis:earth-america"
+                    class="text-9xl"
+                />
+            </span>
+
+            <Orbit v-for="technology in back" 
+                class="size-[30px] items-center justify-center border-none bg-transparent"
+                :duration="technology.duration"
+                :delay="technology.delay"
+                :radius="technology.radius"
+                :direction="technology.direction"
+            >
+                <Image :src="technology.icon" alt="Image" class="w-10 h-10" />
+            </Orbit>
+
+        </div>
+      </div>
+      <div class="flex flex-col w-full md:w-2/3">
+        <h2 class="text-4xl md:text-5xl my-2 font-serif font-semibold">
+          {{  $t('aboutme') }}
+        </h2>
+        <p class="text-sm md:text-xl my-2">
+            Curabitur in quis tempus duis, euismod potenti. Venenatis, ultrices litora pulvinar magnis nascetur varius pede mi. At fames, elit auctor, fusce. Sit phasellus libero morbi penatibus condimentum, lorem habitant. Hendrerit dapibus nec aliquet potenti, consequat. Commodo torquent vivamus orci nullam etiam blandit netus odio. Maecenas. Egestas.
+        </p>
+        <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
+          <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->
+        </div>
+      </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+
+import Orbit from '@/components/animations/Orbit.vue'
+import { ORBIT_DIRECTION ,type OrbitTechnology} from "@/types/orbit";
+import { useTheme } from '~/composables/useTheme'
+
+
+  let backTechnologies: Array<OrbitTechnology> = [
+    //back
+    {
+        slug : 'php',
+        duration : 135,
+        delay: 10,
+        radius: 100,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+    {
+        slug : 'laravel',
+        duration : 135,
+        delay: 50,
+        radius: 100,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+    
+    {
+        slug : 'postgresql',
+        duration : 135,
+        delay: 100,
+        radius: 100,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+
+    {
+        slug : 'mysql',
+        duration : 135,
+        delay: 300,
+        radius: 100,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'c++',
+        duration : 135,
+        delay: 90,
+        radius: 100,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+  
+
+
+    //DEV OPs
+
+    {
+        slug : 'linux',
+        duration : 125,
+        delay: 10,
+        radius: 130,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+
+    {
+        slug : 'nginx',
+        duration : 125,
+        delay: 20,
+        radius: 130,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'apache',
+        duration : 125,
+        delay: 30,
+        radius: 130,
+        direction : ORBIT_DIRECTION.Clockwise,
+    },
+
+    {
+        slug : 'cpanel',
+        duration : 125,
+        delay: 40,
+        radius: 130,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+    
+    //GIT
+    {
+        slug : 'git',
+        duration : 100,
+        delay: 10,
+        radius: 160,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+
+    {
+        slug : 'github',
+        duration : 100,
+        delay: 20,
+        radius: 160,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+    
+    {
+        slug : 'jira',
+        duration : 100,
+        delay: 30,
+        radius: 160,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'gitlab',
+        duration : 100,
+        delay: 40,
+        radius: 160,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'bitbucket',
+        duration : 100,
+        delay: 50,
+        radius: 160,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+
+    //FRONT
+    {
+        slug : 'javascript',
+        duration : 75,
+        delay: 10,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+    
+    {
+        slug : 'typescript',
+        duration : 75,
+        delay: 20,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+    {
+        slug : 'html5',
+        duration : 75,
+        delay: 30,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'css',
+        duration : 75,
+        delay: 40,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+  
+    {
+        slug : 'vue.js',
+        duration : 75,
+        delay: 50,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+   
+    {
+        slug : 'filament',
+        duration : 75,
+        delay: 60,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+   
+    {
+        slug : 'alpine.js',
+        duration : 75,
+        delay: 80,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+    
+    {
+        slug : 'nuxt',
+        duration : 75,
+        delay: 90,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+    
+    {
+        slug : 'tailwindcss',
+        duration : 75,
+        delay: 100,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+    
+    {
+        slug : 'bootstrap',
+        duration : 75,
+        delay: 10,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+
+    {
+        slug : 'npm',
+        duration : 75,
+        delay: 70,
+        radius: 190,
+        direction : ORBIT_DIRECTION.CounterClockwise
+    },
+
+    {
+        slug : 'vite',
+        duration : 75,
+        delay: 80,
+        radius: 190,
+        direction : ORBIT_DIRECTION.Clockwise
+    },
+  ];
+
+  let back = backTechnologies.map(function (item: OrbitTechnology) {
+    item.icon = `https://cdn.simpleicons.org/${item.slug}/000000/C0C0C0`
+    return item;
+  });
+
+</script>
