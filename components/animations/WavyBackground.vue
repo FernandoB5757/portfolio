@@ -1,14 +1,15 @@
 <template>
-  <div :class="cn('h-screen w-screen flex flex-col items-center justify-center', props.containerClass)">
-    <canvas
-      id="canvas"
-      ref="canvasRef"
-      class="absolute z-0"
-      :style="{ filter: isSafari ? `blur(${props.blur}px)` : undefined }"
-    ></canvas>
-    <div :class="cn('relative z-10', props.class)">
-      <slot />
-    </div>
+  <div :class="cn('w-screen', props.containerClass)">
+      <div :class="cn('z-0',canvaClass)">
+        <canvas
+          id="canvas"
+          ref="canvasRef"
+          :style="{ filter: isSafari ? `blur(${props.blur}px)` : undefined }"
+        ></canvas>
+      </div>
+      <div :class="cn('w-screen relative z-10', props.class)">
+        <slot />
+      </div>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import { useTheme }  from "@/composables/useTheme";
   interface WavyBackgroundProps {
     class?: string;
     containerClass?: string;
+    canvaClass?: string
     height?: number;
     colors?: string[];
     waveWidth?: number;
@@ -74,6 +76,7 @@ import { useTheme }  from "@/composables/useTheme";
 
         ctx.filter = `blur(${props.blur}px)`;
         window.onresize = () => {
+          console.log(parent);
           if (parent) {
             w = ctx!.canvas.width = parent.clientWidth;
             h = ctx!.canvas.height = parent.clientHeight;

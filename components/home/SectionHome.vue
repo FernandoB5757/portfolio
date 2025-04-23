@@ -9,11 +9,45 @@
             '#2552eb',
             '#1d48d8'
         ]"        
-        class="min-h-[89vh] flex flex-col-reverse md:flex-row items-center container px-2 lg:px-0 mx-auto gap-x-4"
-        :height="1200"
+        class="items-center justify-center flex flex-col md:flex-row-reverse container px-2 lg:px-0 mx-auto gap-x-4 h-[900px] md:h-[700px]"
+
+        canvaClass="absolute inset-0 h-[1000px] md:h-[800px]"
         :waveOpacity="0.2"
     >
-        <div class="w-full md:w-2/3 xl:w-1/2 p-3" id="me-welcome-letters">
+        <div class="w-full md:w-1/3 xl:w-1/2" id="me-welcome-image">
+            <div class="p-3 flex items-center justify-center relative">
+                <div class="w-60 h-52 md:w-72 md:h-64 lg:w-96 lg:h-80 absolute z-0 image-shadow">
+                    <div class="w-full h-full bg-white/20 dark:bg-black/20
+                     rounded
+                    shadow-2xl dark:shadow-primary-50/50 shadow-primary-500/50 "></div>
+                </div>
+                <Image src="/images/me-xl.png" preview 
+                    :pt:preview-mask:class="'w-full bg-transparent'"
+                >
+                    <template #image>
+                        <NuxtPicture src="/images/me-xl.png" 
+                            :img-attrs="{
+                                alt: 'Fernando Barajas', 
+                                width: 1024, 
+                                height: 1024, 
+                                class: 'rounded w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 '}" 
+                        />
+                    </template>
+                    <template #preview="slotProps">
+                        <NuxtPicture src="/images/me-md.png" 
+                            :img-attrs="{
+                                alt: 'Fernando Barajas', 
+                                style: slotProps.style, 
+                                width: 512, 
+                                height: 512, 
+                                loading: 'lazy'}" 
+                        />
+                    </template>
+                </Image>
+            </div>
+        </div>
+
+        <div class="w-full md:w-2/3 xl:w-1/2 p-3 overflow-x-auto" id="me-welcome-letters">
             <div class="align-content-center align-items-center">
                 <div class="w-full h-full relative mt-5">
                     <div class="relative mt-5">
@@ -45,12 +79,12 @@
                     </div>
                 </div>
             </div>
-            <section class="pt-14 lg:pt-24 xl:pt-32 w-full relative">
+            <section class="pt-14 lg:pt-20 xl:pt-28 w-full relative">
                 <div class="flex flex-row items-center">
                     <div class="w-1/2">
                         <span class="text-sm tracking-wide uppercase">
                             Find Witth me 
-                        </span>
+                        </span> 
                         <div class="flex flex-row gap-3 uppercase">
                             <CardSpotlight
                                 v-for="(socialLink, key) in socialLinks"
@@ -98,38 +132,6 @@
             </section>
         </div>
 
-        <div class="w-full md:w-1/3 xl:w-1/2" id="me-welcome-image">
-            <div class="p-3 flex items-center justify-center relative">
-                <div class="w-60 h-52 md:w-72 md:h-64 lg:w-96 lg:h-80 absolute z-0 image-shadow">
-                    <div class="w-full h-full bg-white/20 dark:bg-black/20
-                     rounded
-                    shadow-2xl dark:shadow-primary-50/50 shadow-primary-500/50 "></div>
-                </div>
-                <Image src="/images/me-xl.png" preview 
-                    :pt:preview-mask:class="'w-full bg-transparent'"
-                >
-                    <template #image>
-                        <NuxtPicture src="/images/me-xl.png" 
-                            :img-attrs="{
-                                alt: 'Fernando Barajas', 
-                                width: 1024, 
-                                height: 1024, 
-                                class: 'rounded w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 '}" 
-                        />
-                    </template>
-                    <template #preview="slotProps">
-                        <NuxtPicture src="/images/me-md.png" 
-                            :img-attrs="{
-                                alt: 'Fernando Barajas', 
-                                style: slotProps.style, 
-                                width: 512, 
-                                height: 512, 
-                                loading: 'lazy'}" 
-                        />
-                    </template>
-                </Image>
-            </div>
-        </div>
     </WavyBackground>    
 </template>
 
