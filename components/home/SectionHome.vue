@@ -47,10 +47,14 @@
             </div>
         </div>
 
-        <div class="w-full md:w-2/3 xl:w-1/2 p-3 overflow-x-auto" id="me-welcome-letters">
+        <div class="w-full md:w-2/3 xl:w-1/2 p-3 overflow-x-clip overflow-y-auto" id="me-welcome-letters">
             <div class="align-content-center align-items-center">
                 <div class="w-full h-full relative mt-5">
-                    <div class="relative mt-5">
+                     <BlurReveal
+                        :delay="0.1"
+                        :duration="0.5"
+                        class="relative mt-5"
+                    >
                         <div class="mb-6">
                             <p class="text-md font-semibold uppercase mb-5 font-serif">
                                 {{ $t('homewelcome') }}
@@ -76,7 +80,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
-                    </div>
+                    </BlurReveal>
                 </div>
             </div>
             <section class="pt-14 lg:pt-20 xl:pt-28 w-full relative">
@@ -139,6 +143,7 @@
 import FlipWords from '../animations/FlipWords.vue';
 import WavyBackground from '../animations/WavyBackground.vue';
 import CardSpotlight from '../animations/CardSpotlight.vue';
+import BlurReveal from '../animations/BlurReveal.vue';
 import { useTheme } from '~/composables/useTheme'
 import { socialLinks,bestSkills } from "@/stores/homeStore";
 

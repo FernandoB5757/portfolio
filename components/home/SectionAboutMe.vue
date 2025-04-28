@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-[89vh] flex flex-col md:flex-row items-center container px-2 lg:px-0 mx-auto gap-x-4">
+    <div class="flex flex-col md:flex-row items-center container px-2 lg:px-0 mx-auto gap-x-4">
       <div class="flex flex-col items-center w-full md:w-1/2">
         <div
             class="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background "
@@ -23,23 +23,28 @@
 
         </div>
       </div>
-      <div class="flex flex-col w-full md:w-2/3">
-        <h2 class="text-4xl md:text-5xl my-2 font-serif font-semibold">
-          {{  $t('aboutme') }}
-        </h2>
-        <p class="text-sm md:text-xl my-2">
-            Curabitur in quis tempus duis, euismod potenti. Venenatis, ultrices litora pulvinar magnis nascetur varius pede mi. At fames, elit auctor, fusce. Sit phasellus libero morbi penatibus condimentum, lorem habitant. Hendrerit dapibus nec aliquet potenti, consequat. Commodo torquent vivamus orci nullam etiam blandit netus odio. Maecenas. Egestas.
-        </p>
-        <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
-          <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->
-        </div>
-      </div>
+      <BlurReveal
+            :delay="0.2"
+            :duration="0.75"
+            class="flex flex-col w-full md:w-2/3"
+        >
+            <h2 class="text-4xl md:text-5xl my-2 font-serif font-semibold">
+            {{  $t('aboutme') }}
+            </h2>
+            <p class="text-sm md:text-xl my-2">
+                Curabitur in quis tempus duis, euismod potenti. Venenatis, ultrices litora pulvinar magnis nascetur varius pede mi. At fames, elit auctor, fusce. Sit phasellus libero morbi penatibus condimentum, lorem habitant. Hendrerit dapibus nec aliquet potenti, consequat. Commodo torquent vivamus orci nullam etiam blandit netus odio. Maecenas. Egestas.
+            </p>
+            <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
+                <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->
+            </div>
+        </BlurReveal>
     </div>
 </template>
 
 <script setup lang="ts">
 
 import Orbit from '@/components/animations/Orbit.vue'
+import BlurReveal from '../animations/BlurReveal.vue';
 import { ORBIT_DIRECTION ,type OrbitTechnology} from "@/types/orbit";
 import { useTheme } from '~/composables/useTheme'
 
