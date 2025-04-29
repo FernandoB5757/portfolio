@@ -18,10 +18,10 @@
 
 <script lang="ts" setup>
 import { cn } from "@/lib/utils";
-import { ORBIT_DIRECTION, type Props } from "@/types/orbit";
+import { ORBIT_DIRECTION, type OrbitProps } from "@/types/orbit";
 import { computed } from "vue";
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<OrbitProps>(), {
   direction: () => ORBIT_DIRECTION.Clockwise,
   duration: 20,
   delay: 10,

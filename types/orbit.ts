@@ -7,7 +7,7 @@ export const ORBIT_DIRECTION = {
 
 export type OrbitDirection = ObjectValues<typeof ORBIT_DIRECTION>;
 
-export interface Props {
+export interface OrbitProps {
   class?: string;
   direction?: OrbitDirection;
   duration?: number;
@@ -16,7 +16,7 @@ export interface Props {
   path?: boolean;
 }
 
-export interface OrbitTechnology extends Props {
+export interface OrbitTechnology extends OrbitProps {
   slug: string,
   icon?: string
 }
