@@ -1,0 +1,31 @@
+{
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "openmenu": "Open menu",
+    "homewelcome": "Welcome to my world",
+    "Software Engineer": "Software Engineer",
+    "PHP Developer": "PHP Developer",
+    "Web Developer": "Web Developer",
+    "Full Stack Developer": "Full Stack Developer",
+    "a_welcome": "a",
+    "hi_welcome": "Hi, I'm",
+    "description" : "Description",
+    "contribution" : "Contribution",
+    "technologies" : "Technologies",
+    "projects" : {
+        "mimo": {
+            "title": "MIMO - Honda Motorcycles Comoto",
+            "description": "Management platform for Honda motorcycle dealerships",
+            "contribution": "Developed the backend with Laravel and optimized inventory processes"
+        },
+        "portfolio": {
+            "title": "My Portfolio",
+            "description": "Personal website to showcase my projects and skills",
+            "contribution": "Complete design and development using Nuxt 3 and Tailwind CSS"
+        }
+    }
+}
