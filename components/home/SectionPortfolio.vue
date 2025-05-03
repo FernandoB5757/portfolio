@@ -19,7 +19,9 @@
 
                 <div id="my-portfolio-projects" class="w-full relative">
                     <div class="flex">
-                        <div>wewqewq</div>
+                        <ProjectList 
+                            :projects="projects" 
+                        />
                     </div>
                 </div>
             </div>
@@ -30,6 +32,11 @@
 <script setup lang="ts">
 import BlurReveal from '../animations/BlurReveal.vue';
 import { useTheme } from '~/composables/useTheme'
+import { useProjects } from '~/composables/useProjects';
+import ProjectList from '../projects/ProjectList.vue';
 
+const { projects } = useProjects()
+
+console.log(projects.value);
 
 </script>
