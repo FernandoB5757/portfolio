@@ -1,4 +1,5 @@
 <template>
+  <ClientOnly>
     <div
       :class="[
         'group relative flex size-full overflow-hidden rounded-xl borde bg-neutral-900 text-white',
@@ -7,7 +8,7 @@
       @mousemove="handleMouseMove"
       @mouseleave="handleMouseLeave"
     >
-      <div :class="cn('relative z-10', props.slotClass)">
+      <div :class="cn('relative z-10', props?.slotClass)">
         <slot></slot>
       </div>
       <div
@@ -16,9 +17,26 @@
           background: backgroundStyle,
           opacity: gradientOpacity,
         }"
+          role="presentation"
+          aria-hidden="true"
       ></div>
     </div>
-  </template>
+
+    <template #fallback>
+        <div
+          :class="[
+            'group relative flex size-full overflow-hidden rounded-xl borde bg-neutral-900 text-white',
+            $props.class,
+          ]"
+        >
+          <div :class="cn('relative z-10', props?.slotClass)">
+            <slot></slot>
+          </div>
+        </div>
+    </template>
+
+  </ClientOnly>
+</template>
   
   <script setup lang="ts">
   import { ref, computed, type HTMLAttributes, withDefaults, defineProps } from "vue";
@@ -27,7 +45,7 @@
   const props = withDefaults(
     defineProps<{
       class: HTMLAttributes["class"];
-      slotClass: HTMLAttributes["class"];
+      slotClass?: HTMLAttributes["class"];
       gradientSize: number;
       gradientColor: string;
       gradientOpacity: number;
