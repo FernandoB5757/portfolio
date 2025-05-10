@@ -19,9 +19,7 @@
 
                 <div id="my-portfolio-projects" class="w-full relative">
                     <div class="flex">
-                        <ProjectList 
-                            :projects="projects" 
-                        />
+                        <ProjectList :projects="projects" />
                     </div>
                 </div>
             </div>
@@ -36,7 +34,5 @@ import { useProjects } from '~/composables/useProjects';
 import ProjectList from '../projects/ProjectList.vue';
 
 const { projects } = useProjects()
-
-console.log(projects.value);
 
 </script>

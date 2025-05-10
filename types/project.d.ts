@@ -9,7 +9,7 @@ export interface Project {
     width?: number
     height?: number
   }
-  url: string
+  url?: string
   technologies: Technology['id'][]
   date: {
     start: string
@@ -25,5 +25,6 @@ export interface Project {
 export interface ProjectI18n extends Project{
   title: string
   description: string
+  long_description?: string
   contribution: string
 }

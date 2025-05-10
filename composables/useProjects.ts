@@ -9,6 +9,7 @@ export const useProjects = () => {
       ...project,
       title: t(`projects.${project.id}.title`),
       description: t(`projects.${project.id}.description`),
+      long_description: t(`projects.${project.id}.long_description`),
       contribution: t(`projects.${project.id}.contribution`)
     }))
   })

@@ -1,14 +1,14 @@
 <template>
-    <div class="bg-surface-100 dark:bg-surface-900">
+    <div>
         <section id="welcome-home">
             <SectionHome />
         </section>
         
-        <section id="about-me">
+        <section id="about-me" class="limit-elements">
             <SectionAboutMe />
         </section>
 
-        <section id="my-portfolio">
+        <section id="my-portfolio" class="limit-elements">
             <SectionPortfolio />
         </section>
     </div>
@@ -19,3 +19,11 @@ import SectionAboutMe from '@/components/home/SectionAboutMe.vue'
 import SectionPortfolio from '@/components/home/SectionPortfolio.vue'
 
 </script>
+
+<style scoped>
+
+.limit-elements{
+    @apply max-w-[1320px] ml-auto mr-auto;
+}
+
+</style>

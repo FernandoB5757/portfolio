@@ -1,6 +1,7 @@
 {
     "home": "Inicio",
     "about": "Acerca de",
+    "aboutme": "Acerca de mí",
     "blog": "Blog",
     "contact": "Contacto",
     "login": "Iniciar sesión",
@@ -16,13 +17,36 @@
     "description" : "Descripción",
     "contribution" : "Contribución",
     "technologies" : "Tecnologias",
+    "view project" : "Ver proyecto",
+    "Coming soon" : "Próximamente",
     "dates": {
+      "start" : "Fecha Inicio",
+      "end" : "Fecha Fin",
       "present" : "Presente"
     },
     "projects" : {
         "mimo": {
-          "title": "MIMO - Honda Motos Comoto",
-          "description": "Plataforma de gestión para concesionarios de motocicletas Honda",
+          "title": "MIMO - Motos",
+          "description": "Plataforma de gestión para concesionarios de motocicletas",
+          "long_description": "Aplicación que gestiona Grupos y Distribuidores, centraliza información de los mismos como contactos, redes sociales, direcciones y horarios, etc.La plataforma permite generar sitios web para cada Grupo basándose en su dominio, con la opción de administrar sus banners (generales como específicos para cada Grupo), además se pueden agregar promociones.\n\nEsta página principal tiene su Landing Page, sus propios banners que son administrable, su listado de modelos/productos, un mapa con sucursales del grupo, entre otros vistas. \n \n El sitio principal permite a los clientes potenciales crear Leads de un producto en específico, la información de dicho cliente se guarda encriptada para salvaguardar la privacidad del mismo.Del lado del administrador se creó un CRM intuitivo para el seguimiento de Leads, dónde se aplica un sistema de roles multi-nivel que garantiza la confidencialidad, en el mismo se aplicó una forma innovadora para la búsqueda de Leads, lo cual fue una tarea intensiva por el manejo de datos encriptados.\n \n La aplicación también tiene end points para generar Leads de diversas aplicaciones, centralizando toda la información sobre motos y simplificando el análisis estadístico.\n\nLa aplicación se creo con una estructura ampliable que facilita futuras adiciones de funcionalidades.",
+          "contribution": "Desarrollé el backend con Laravel y optimicé los procesos de inventario.Desarrollé el backend con Laravel y optimicé los procesos de inventario.Desarrollé el backend con Laravel y optimicé los procesos de inventario.Desarrollé el backend con Laravel y optimicé los procesos de inventario.Desarrollé el backend con Laravel y optimicé los procesos de inventario"
+        },
+        "ekar": {
+          "title": "Ekar de Gas",
+          "description": "Plataforma Ecommerce",
+          "long_description": "",
+          "contribution": "Desarrollé el backend con Laravel y optimicé los procesos de inventario"
+        },
+        "tubin": {
+          "title": "Tubin",
+          "description": "Plataforma Ecommerce",
+          "long_description": "",
+          "contribution": "Desarrollé el backend con Laravel y optimicé los procesos de inventario"
+        },
+        "solarudg": {
+          "title": "Solar UDG",
+          "description": "Proyecto final universidad",
+          "long_description": "",
           "contribution": "Desarrollé el backend con Laravel y optimicé los procesos de inventario"
         },
         "portfolio": {

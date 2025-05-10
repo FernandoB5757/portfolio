@@ -95,7 +95,6 @@
                                 :key="key"
                                 class="cursor-pointer flex-col items-center justify-center whitespace-nowrap shadow-2xl w-14 h-14 "
                                 :gradient-color="isDark ? '#363636' : '#C9C9C9'"
-                                slot-class=""
                                 :gradient-size="200"
                                 :gradient-opacity="0.8"
                             >

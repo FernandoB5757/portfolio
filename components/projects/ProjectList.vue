@@ -1,5 +1,5 @@
 <template>
-  <div :class="gridClass">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 justify-items-center w-full">
     <ProjectCard
       v-for="project in projects"
       :key="project.id"
@@ -17,8 +17,4 @@ const props = defineProps<{
   itemsPerRow?: number
 }>()
 
-const gridClass = computed(() => {
-  const cols = props.itemsPerRow || 3
-  return `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-${cols} gap-6`
-})
 </script>

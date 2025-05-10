@@ -1,6 +1,7 @@
 {
     "home": "Home",
     "about": "About",
+    "aboutme": "About me",
     "blog": "Blog",
     "contact": "Contact",
     "login": "Login",
@@ -16,8 +17,15 @@
     "description" : "Description",
     "contribution" : "Contribution",
     "technologies" : "Technologies",
+    "view project" : "View project",
+    "Coming soon" : "Próximamente",
     "projects" : {
         "mimo": {
+            "title": "MIMO - Honda Motorcycles Comoto",
+            "description": "Management platform for Honda motorcycle dealerships",
+            "contribution": "Developed the backend with Laravel and optimized inventory processes"
+        },
+        "ekar": {
             "title": "MIMO - Honda Motorcycles Comoto",
             "description": "Management platform for Honda motorcycle dealerships",
             "contribution": "Developed the backend with Laravel and optimized inventory processes"
