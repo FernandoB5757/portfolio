@@ -1,39 +1,30 @@
 <template>
   <ClientOnly>
-    <div
-      :class="[
-        'group relative flex size-full overflow-hidden rounded-xl borde bg-neutral-900 text-white',
-        $props.class,
-      ]"
-      @mousemove="handleMouseMove"
-      @mouseleave="handleMouseLeave"
-    >
-      <div :class="cn('relative z-10', props?.slotClass)">
-        <slot></slot>
-      </div>
       <div
-        class="pointer-events-none absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        :style="{
-          background: backgroundStyle,
-          opacity: gradientOpacity,
-        }"
-          role="presentation"
-          aria-hidden="true"
-      ></div>
-    </div>
-
-    <template #fallback>
-        <div
-          :class="[
-            'group relative flex size-full overflow-hidden rounded-xl borde bg-neutral-900 text-white',
-            $props.class,
-          ]"
-        >
-          <div :class="cn('relative z-10', props?.slotClass)">
-            <slot></slot>
-          </div>
+        :class="[
+          'group relative flex size-full overflow-hidden rounded-xl borde bg-neutral-900 text-white',
+          $props.class,
+        ]"
+        @mousemove="handleMouseMove"
+        @mouseleave="handleMouseLeave"
+      >
+        <div :class="cn('relative z-10', props?.slotClass)">
+          <slot></slot>
         </div>
-    </template>
+        <div
+          class="pointer-events-none absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          :style="{
+            background: backgroundStyle,
+            opacity: gradientOpacity,
+          }"
+            role="presentation"
+            aria-hidden="true"
+        ></div>
+      </div>
+      
+      <template #fallback>
+        <slot></slot>
+      </template>
 
   </ClientOnly>
 </template>
