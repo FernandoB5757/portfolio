@@ -76,7 +76,6 @@ import { useTheme }  from "@/composables/useTheme";
 
         ctx.filter = `blur(${props.blur}px)`;
         window.onresize = () => {
-          console.log(parent);
           if (parent) {
             w = ctx!.canvas.width = parent.clientWidth;
             h = ctx!.canvas.height = parent.clientHeight;

@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.11.0",
+    "@nuxt/fonts": "^0.11.3",
     "@nuxt/icon": "^1.12.0",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/color-mode": "^3.5.2",
@@ -19,7 +19,7 @@
     "@primevue/themes": "^4.1.0",
     "@vueuse/core": "^13.0.0",
     "motion-v": "^1.0.2",
-    "nuxt": "^3.17.0",
+    "nuxt": "^3.17.3",
     "primevue": "^4.3.4",
     "simplex-noise": "^4.0.3",
     "tailwindcss-primeui": "^0.3.4",
@@ -33,9 +33,13 @@
     "@primevue/nuxt-module": "^4.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "sass-embedded": "^1.88.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.6.2",
     "vue-tsc": "^2.1.6"
+  },
+  "engines": {
+        "node": "^24.0.0"
   }
 }
