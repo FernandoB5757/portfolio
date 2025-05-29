@@ -34,6 +34,18 @@ export default <Partial<Config>>{
           '900': 'rgb(var(--color-red-plug-900))',
           '950': 'rgb(var(--color-red-plug-950))',
         } 
+      },
+      boxShadow: {
+        'blue-neon': `
+          0 0 5px rgb(var(--color-blue-300)),
+          0 0 10px rgb(var(--color-blue-400)),
+          0 0 15px rgb(var(--color-blue-500)),
+          0 0 20px rgb(var(--color-blue-600))
+        `,
+        'blue-neon-sm': `
+          0 0 2px rgb(var(--color-blue-400)),
+          0 0 5px rgb(var(--color-blue-500))
+        `
       }
     }
   }

@@ -1,0 +1,56 @@
+import type { Experience } from '~/types/index'
+
+
+export const experiences: Experience[] = [
+  {
+    id: 'university',
+    order: 4,
+    image: {
+      src: '/images/experiences/cucei.png',
+      alt: 'UDG - CUCEI',
+    },
+    date: {
+      start: '2019',
+      end: '2024',
+    },
+  },
+  {
+    id: 'mtsoftech',
+    title: "MT - Softech",
+    order: 3,
+    image: {
+      src: '/images/experiences/mt-logo.png',
+      alt: 'UDG - MT softech',
+    },
+    date: {
+      start: '2022-01',
+      end: '2023-01'
+    },
+  },
+  {
+    id: 'cucei',
+    order: 2,
+    image: {
+      src: '/images/experiences/cucei.png',
+      alt: 'CUCEI area de desarrollo',
+    },
+    date: {
+      start: '2022-01',
+      end: '2023-01'
+    },
+  },
+  {
+    id: 'netcommerce',
+    title: 'Netcommerce',
+    order: 1,
+    image: {
+      src: '/images/experiences/netcommerce.png',
+      alt: 'netcommerce',
+    },
+    date: {
+      start: '2023-08',
+      end: '2025',
+      isCurrent: true
+    },
+  },
+] as const

@@ -1,14 +1,10 @@
 
 import { Technology } from "./technology"
+import { Image } from "./index"
 
 export interface Project {
   id: string
-  image: {
-    src: string
-    alt: string
-    width?: number
-    height?: number
-  }
+  image: Image;
   url?: string
   technologies: Technology['id'][]
   date: {

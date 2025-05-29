@@ -54,5 +54,21 @@
           "description": "Sitio personal para mostrar mis proyectos y habilidades",
           "contribution": "Diseño y desarrollo completo con Nuxt 3 y Tailwind CSS"
         }
-      }
+      },
+    "experiences" : {
+        "university": {
+            "title": "CUCEI - Ingeniería Informática",
+            "description": "Graduado de la carrera de informatica."
+        },
+        "mtsoftech": {
+            "description": "Mi primer trabajo como programador."
+        },
+        "cucei": {
+            "title": "Área de Desarrollo CUCEI",
+            "description": "Inicie con mis practicas y continue como becario un ambiente muy amigable y colaborativo."
+        },
+        "netcommerce": {
+            "description": "Netcommerce es una agencia de marketing digital con más de 26 años de experiencia, especializados en diseño y desarrollo web, pioneros del comercio electrónico en México y expertos en redes sociales."
+        }
+    }
 }

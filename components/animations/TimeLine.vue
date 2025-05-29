@@ -12,40 +12,47 @@
       </p>
     </div> -->
 
-    <div
-      ref="timelineRef"
+    <div ref="timelineRef"
       class="relative z-0 mx-auto max-w-7xl py-20"
     >
-      <div class="customized-timeline !bg-transparent">
-         <div 
-              v-for="(item, index) in items"
-              :key="item.id"
+      <div v-for="(item, index) in items"
+        :key="item.id"
+        class="relative z-10 mb-12 flex w-full mx-5 md:mx-0 group" 
+      >
+          <div :class="[
+                'w-full md:w-1/2',
+                  index % 2 === 0 ? 'order-1 md:pr-8 md:text-right' : 'md:pl-8 md:text-left order-2'
+              ]"
           >
-            <div class="relative mb-12 flex w-full mx-5 md:mx-0" >
-                <div :class="[
-                      'w-full md:w-1/2',
-                        index % 2 === 0 ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left',
-                        index % 2 === 0 ? 'order-1' : 'order-2' 
-                    ]"
-                >
-                    <div class="relative rounded-xl bg-white p-6 shadow-lg dark:bg-neutral-900">
-                    <h3 class="mb-4 text-2xl font-bold text-neutral-500">
-                        {{ `Section ${index + 1}` }}
-                    </h3>
-                    <p class="text-sm text-neutral-800 dark:text-neutral-200">
-                        Inspira UI gives you the freedom to design awesome website, in less time.
-                    </p>
-                    </div>
+              <div class="card">
+                <NuxtPicture 
+                  :src="item.image.src" 
+                  :img-attrs="{
+                      alt: `image of ${item.image.alt}`, 
+                      class: 'h-24 w-auto bg-surface-300 dark:bg-transparent rounded p-2 ' + (index % 2 === 0 ? 'md:ml-auto' : 'md:mr-auto'), 
+                      height: item.image?.height ?? 150, 
+                      width: item.image?.width ?? 150
+                    }" 
+                />
+                <div class="heading">
+                  <h4 class="title">
+                      {{ item.title }}
+                  </h4>
+                  <span class="block text-sm">
+                      {{ item.date.start }}
+                  </span>
                 </div>
-                <div 
-                    class="absolute left-1/2 top-6 -translate-x-1/2 transform md:relative md:left-0 md:top-0 md:w-1/2 md:translate-x-0"
-                    :class="index % 2 === 0 ? 'md:order-2' : 'md:order-1'"
-                >
-                </div>
-                <div class="absolute w-full top-1/2 flex justify-start md:justify-center  ml-[-26px] md:ml-0">
-                  <div class="h-4 w-4 rounded-full bg-blue-500"></div>
-                </div>
-            </div>
+                <p class="description">
+                    {{ item.description }}
+                </p>
+              </div>
+          </div>
+          <div class="absolute left-1/2 top-6 -translate-x-1/2 transform md:relative md:left-0 md:top-0 md:w-1/2 md:translate-x-0"
+              :class="index % 2 === 0 ? 'md:order-2' : 'md:order-1'"
+          >
+          </div>
+          <div class="brightness-100 group-hover:brightness-150 absolute w-full top-1/2 flex justify-start md:justify-center  ml-[-26px] md:ml-0 z-10">
+            <div class="h-4 w-4 rounded-full bg-primary-500 shadow-blue-neon"></div>
           </div>
       </div>
 
@@ -62,7 +69,8 @@
                 height: heightTransform,
                 opacity: opacityTransform,
               }"
-              class="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-0% via-blue-500 via-10% to-transparent"
+              class="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t 
+              from-blue-400 dark:from-blue-200 from-10% via-blue-200 dark:via-blue-950 via-30% to-transparent"
             >
             </Motion>
         </div>
@@ -75,14 +83,12 @@
 <script lang="ts" setup>
 import { Motion, useScroll, useTransform } from "motion-v";
 import type { HTMLAttributes } from "vue";
+import type {  ExperienceI18n } from '~/types/index'
 
 interface Props {
   containerClass?: HTMLAttributes["class"];
   class?: HTMLAttributes["class"];
-  items?: {
-    id: string;
-    label: string;
-  }[];
+  items: ExperienceI18n[];
   title?: string;
   description?: string;
 }
@@ -117,19 +123,36 @@ watch(height, (newHeight) => {
 </script>
 
 <style lang="scss" scoped>
-  @media screen and (max-width: 960px) {
-      ::v-deep(.customized-timeline) {
-          .p-timeline-event:nth-child(even) {
-              flex-direction: row;
+.title{
+  font-size: 24px;
+  line-height: 39px;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.heading{
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  @apply border-primary border-solid
+}
+.description{
+    font-size: 18px;
+    line-height: 28px;
+}
+.card{
+  @apply rounded-lg mt-4 mb-8 py-4 px-4 transition duration-700 border
+    bg-white group-hover:bg-primary-100
+    dark:border-gray-800 dark:group-hover:border-gray-500
+    dark:bg-transparent dark:group-hover:bg-gray-900 
+   ;
+}
 
-              .p-timeline-event-content {
-                  text-align: left;
-              }
-          }
-
-          .p-timeline-event-opposite {
-              flex: 0;
-          }
-      }
-  }
+   
+/* 
+ group-hover:bg-primary-300 
+    group-hover:scale-100 
+    border border-primary-200 group-hover:border-primary-500
+ */
 </style>
