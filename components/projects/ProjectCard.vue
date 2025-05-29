@@ -1,16 +1,20 @@
 <template>
-  <article class="project-card">
-    <div class="relative">
-        <NuxtImg
-          :src="project.image.src"
-          :alt="project.image.alt"
-          :width="project.image.width || 400"
-          :height="project.image.height || 300"
-          class="project-image"
-          loading="lazy"
-          placeholder
-          @click="isOpen = true"
-        />
+  <article>
+    <div class="project-card group">
+        <div class="project-picture">
+          <NuxtPicture
+            :src="project.image.src"
+            :imgAttrs="{
+              alt : project.image.alt,
+              width : project.image.width || 400,
+              height : project.image.height || 300,
+              class : 'group-hover:scale-110 transition ease-in-out delay-150 duration-300 rounded-lg',
+              loading : 'lazy',
+            }"
+            @click="isOpen = true"
+          />
+        </div>
+        
         <div class="project-content">
           <h5 class="project-title" @click="isOpen = true">
             {{ project.title }}
@@ -41,13 +45,18 @@ const { t } = useI18n()
 const isOpen = ref(false)
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
 .project-card {
-  @apply p-7 max-w-sm bg-white border border-surface-200 rounded-lg shadow-sm dark:bg-surface-800 dark:border-surface-700 h-96;
+  @apply p-7 max-w-sm h-96 border relative
+    rounded-lg shadow-lg 
+  bg-white hover:bg-primary-100 border-primary-200
+    dark:bg-surface-900 dark:border-surface-700 dark:hover:bg-surface-950
+    transition ease-in-out duration-300;
 }
 
-.project-image {
-  @apply w-full h-48 object-cover rounded-lg cursor-pointer;
+.project-picture {
+  @apply max-h-40 w-full overflow-hidden rounded-lg cursor-pointer;
 }
 
 .project-content {
