@@ -22,6 +22,7 @@
                         :items="experiences"
                         title="Beam me up"
                         description="Show the timeline in style"
+                        :height="1750"
                     >
                     </Timeline> 
                     <!-- <Timeline></Timeline>  -->
@@ -43,7 +44,7 @@ const { experiences } = useExperiences();
 
 </script>
 
-<style>
+<style scoped>
 /* Para pantallas pequeñas (mobile first) */
 @media (max-width: 767px) {
   .timeline-item::before {
