@@ -1,39 +1,82 @@
 {
-    "home": "Home",
-    "about": "About",
-    "aboutme": "About me",
-    "blog": "Blog",
-    "contact": "Contact",
-    "login": "Login",
-    "register": "Register",
-    "openmenu": "Open menu",
-    "homewelcome": "Welcome to my world",
-    "Software Engineer": "Software Engineer",
-    "PHP Developer": "PHP Developer",
-    "Web Developer": "Web Developer",
-    "Full Stack Developer": "Full Stack Developer",
-    "a_welcome": "a",
-    "hi_welcome": "Hi, I'm",
-    "description" : "Description",
-    "contribution" : "Contribution",
-    "technologies" : "Technologies",
-    "view project" : "View project",
-    "Coming soon" : "Próximamente",
-    "projects" : {
-        "mimo": {
-            "title": "MIMO - Honda Motorcycles Comoto",
-            "description": "Management platform for Honda motorcycle dealerships",
-            "contribution": "Developed the backend with Laravel and optimized inventory processes"
-        },
-        "ekar": {
-            "title": "MIMO - Honda Motorcycles Comoto",
-            "description": "Management platform for Honda motorcycle dealerships",
-            "contribution": "Developed the backend with Laravel and optimized inventory processes"
-        },
-        "portfolio": {
-            "title": "My Portfolio",
-            "description": "Personal website to showcase my projects and skills",
-            "contribution": "Complete design and development using Nuxt 3 and Tailwind CSS"
-        }
+  "home": "Home",
+  "about": "About",
+  "aboutme": "About Me",
+  "blog": "Blog",
+  "contact": "Contact",
+  "login": "Login",
+  "register": "Register",
+  "openmenu": "Open Menu",
+  "homewelcome": "Welcome to my world",
+  "Software Engineer": "Software Engineer",
+  "PHP Developer": "PHP Developer",
+  "Web Developer": "Web Developer",
+  "Full Stack Developer": "Full Stack Developer",
+  "a_welcome": "a",
+  "hi_welcome": "Hi, I'm",
+  "description": "Description",
+  "contribution": "Contribution",
+  "technologies": "Technologies",
+  "view project": "View project",
+  "Coming soon": "Coming soon",
+  "Send": "Send",
+  "changelang": "Change language",
+  "contactme": {
+    "title": "Want to get to know me?",
+    "label": "Your message",
+    "content": "Hi, I'm interested in your professional profile because...",
+    "emailsubject": "FB - Contact via portfolio"
+  },
+  "dates": {
+    "start": "Start Date",
+    "end": "End Date",
+    "present": "Present"
+  },
+  "projects": {
+    "mimo": {
+      "title": "MIMO - Motorcycles",
+      "description": "Management platform for motorcycle dealerships",
+      "long_description": "Application that manages Groups and Dealers, centralizing information such as contacts, social media, addresses, schedules, etc. The platform allows creating websites for each Group based on its domain, with options to manage both general and group-specific banners, as well as add promotions.\n\nThis main site has a landing page, customizable banners, a product list, a map of the group's branches, among other views.\n\nThe site allows potential customers to generate leads for specific products. The client's data is stored encrypted to protect their privacy. On the admin side, an intuitive CRM was created to follow up on leads, using a multi-level role system to ensure confidentiality. An innovative method for searching leads was applied, which was challenging due to encrypted data management.\n\nThe app also has endpoints to generate leads from various applications, centralizing all motorcycle data and simplifying statistical analysis.\n\nThe application was built with a scalable structure to easily support future feature additions.",
+      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+    },
+    "ekar": {
+      "title": "Ekar de Gas",
+      "description": "E-commerce Platform",
+      "long_description": "",
+      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+    },
+    "tubin": {
+      "title": "Tubin",
+      "description": "E-commerce Platform",
+      "long_description": "",
+      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+    },
+    "solarudg": {
+      "title": "Solar UDG",
+      "description": "University Final Project",
+      "long_description": "",
+      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+    },
+    "portfolio": {
+      "title": "My Portfolio",
+      "description": "Personal site to showcase my projects and skills",
+      "contribution": "Complete design and development using Nuxt 3 and Tailwind CSS"
     }
+  },
+  "experiences": {
+    "university": {
+      "title": "CUCEI - Computer Engineering",
+      "description": "Graduated from the Computer Engineering program."
+    },
+    "mtsoftech": {
+      "description": "My first job as a programmer."
+    },
+    "cucei": {
+      "title": "CUCEI Development Area",
+      "description": "I started with my internship and continued as a scholarship holder in a very friendly and collaborative environment."
+    },
+    "netcommerce": {
+      "description": "Netcommerce is a digital marketing agency with over 26 years of experience, specializing in web design and development, pioneers in e-commerce in Mexico, and social media experts."
+    }
+  }
 }

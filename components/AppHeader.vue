@@ -1,64 +1,62 @@
 <template>
-    <div>
 
-        <Drawer v-model:visible="showMenu">
-            <template #header>
-                <div class="flex items-center gap-2">
-                    <Avatar image="/images/me-xl.png" 
-                        class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
-                        size="xlarge" 
-                        shape="circle" 
-                    />
-                    <p class="text-xl font-bold">
-                        Fernando Barajas
-                    </p>
-                </div>
-            </template>
-            <p class="description">
-                PHP Developer, Web Developer, Full Stack Developer, Software Engineer
-            </p>
-            <div class="border-b border-gray-300 dark:border-gray-500 mt-3"></div>
-            <AppMenu/>
-            <template #footer>
-                <div class="flex items-center gap-2">
-                </div>
-            </template>
-        </Drawer>
-
-        <header class="py-2 sticky top-0 transition-colors duration-500 z-50 " 
-            :class="{'bg-surface-100 dark:bg-surface-900': showHeaderBackground}"
-        >
-            <div class="container mx-auto">
-                <nav class="flex justify-between p-2 items-center">
-                    <div>
-                        <Avatar image="/images/me-xl.png" 
-                            class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
-                            size="xlarge" 
-                            shape="circle" 
-                        />
-                    </div>
-                    <div class="flex items-end">
-                        <div class="block md:hidden">
-                            <Button text 
-                                size="large" 
-                                @click="toggleMenu" 
-                                severity="secondary" 
-                                :aria-label="$t('openmenu')"
-                            >
-                                <Icon name="heroicons:bars-3" class="text-2xl"/>
-                            </Button>
-                        </div>                        
-                        <div class="hidden md:block">
-                            <AppMenu />
-                        </div>
-                        <div class="block">
-                            <DarkModeSwitch />
-                        </div>
-                    </div>
-                </nav>
+    <Drawer v-model:visible="showMenu">
+        <template #header>
+            <div class="flex items-center gap-2">
+                <Avatar image="/images/me-xl.png" 
+                    class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                    size="xlarge" 
+                    shape="circle" 
+                />
+                <p class="text-xl font-bold">
+                    Fernando Barajas
+                </p>
             </div>
-        </header>
-    </div>
+        </template>
+        <p class="description">
+            PHP Developer, Web Developer, Full Stack Developer, Software Engineer
+        </p>
+        <div class="border-b border-gray-300 dark:border-gray-500 mt-3"></div>
+        <AppMenu/>
+        <template #footer >
+            <div class="flex justify-center gap-2">
+                <LangSwitch size="large"></LangSwitch>
+            </div>
+        </template>
+    </Drawer>
+
+    <header class="py-2 sticky top-0 transition-colors duration-500 z-20 flex justify-center" 
+        :class="{'bg-surface-100 dark:bg-surface-900': showHeaderBackground}"
+    >
+        <nav class="container flex justify-between px-5 py-3">
+            <div class="h-16 mt-1">
+                <Avatar image="/images/me-xl.png" 
+                    class="rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                    :class="{ 'visible' : showHeaderBackground , 'hidden' : ! showHeaderBackground}"
+                    size="xlarge" 
+                    shape="circle" 
+                />
+            </div>
+            <div class="flex items-end">
+                <div class="block md:hidden">
+                    <Button text 
+                        size="large" 
+                        @click="toggleMenu" 
+                        severity="secondary" 
+                        :aria-label="$t('openmenu')"
+                    >
+                        <Icon name="heroicons:bars-3" class="text-2xl"/>
+                    </Button>
+                </div>                        
+                <div class="hidden md:block">
+                    <AppMenu />
+                </div>
+                <div class="block md:hidden">
+                    <DarkModeSwitch />
+                </div>
+            </div>
+        </nav>
+    </header>
 </template>
 
 <script setup lang="ts">

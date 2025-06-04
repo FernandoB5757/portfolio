@@ -11,6 +11,12 @@
                 {{ $t('home') }}
             </Button>
         </li>
+        <li class="hidden md:block">
+            <DarkModeSwitch size="large"></DarkModeSwitch>
+        </li>
+        <li class="hidden md:block">
+            <LangSwitch size="large" class="w-full h-full md:w-auto"></LangSwitch>
+        </li>
     </ul>
 </template>
 <script setup lang="ts">
