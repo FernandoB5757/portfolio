@@ -56,6 +56,6 @@ const mailto = computed(() => {
 }
 
 .content-layer {
-    @apply absolute z-10 top-32 md:top-28 xl:top-1/4 left-5 sm:left-28 lg:left-1/4 px-5 sm:px-0 ;
+    @apply absolute z-10 top-32 md:top-28 xl:top-32 left-5 sm:left-28 lg:left-1/4 px-5 sm:px-0 ;
 }
 </style>
