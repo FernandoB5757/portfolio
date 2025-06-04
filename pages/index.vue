@@ -15,6 +15,10 @@
         <section id="my-resume" class="limit-elements">
             <SectionResume />
         </section>
+
+        <section id="contact-with-me" class="limit-elements">
+            <SectionContactMe />
+        </section>
     </div>
 </template>
 <script setup lang="ts">
@@ -22,6 +26,7 @@ import SectionHome from '@/components/home/SectionHome.vue'
 import SectionAboutMe from '@/components/home/SectionAboutMe.vue'
 import SectionPortfolio from '@/components/home/SectionPortfolio.vue'
 import SectionResume from '@/components/home/SectionResume.vue'
+import SectionContactMe from '@/components/home/SectionContactMe.vue'
 
 </script>
 
