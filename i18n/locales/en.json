@@ -17,12 +17,12 @@
   "description": "Description",
   "contribution": "Contribution",
   "technologies": "Technologies",
-  "view project": "View project",
-  "Coming soon": "Coming soon",
+  "view project": "View Project",
+  "Coming soon": "Coming Soon",
   "Send": "Send",
-  "changelang": "Change language",
+  "changelang": "Change Language",
   "contactme": {
-    "title": "Want to get to know me?",
+    "title": "Want to get in touch?",
     "label": "Your message",
     "content": "Hi, I'm interested in your professional profile because...",
     "emailsubject": "FB - Contact via portfolio"
@@ -36,47 +36,47 @@
     "mimo": {
       "title": "MIMO - Motorcycles",
       "description": "Management platform for motorcycle dealerships",
-      "long_description": "Application that manages Groups and Dealers, centralizing information such as contacts, social media, addresses, schedules, etc. The platform allows creating websites for each Group based on its domain, with options to manage both general and group-specific banners, as well as add promotions.\n\nThis main site has a landing page, customizable banners, a product list, a map of the group's branches, among other views.\n\nThe site allows potential customers to generate leads for specific products. The client's data is stored encrypted to protect their privacy. On the admin side, an intuitive CRM was created to follow up on leads, using a multi-level role system to ensure confidentiality. An innovative method for searching leads was applied, which was challenging due to encrypted data management.\n\nThe app also has endpoints to generate leads from various applications, centralizing all motorcycle data and simplifying statistical analysis.\n\nThe application was built with a scalable structure to easily support future feature additions.",
-      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+      "long_description": "Application that manages Groups and Dealers, centralizing their information such as contacts, social networks, addresses, schedules, etc. The platform allows the generation of websites for each Group based on their domain, with options to manage banners (both general and group-specific), and add promotions.\n\nEach main site has its own Landing Page, banners, a model/product list, and a map of group branches, among other views.\n\nThe main site allows potential customers to create Leads for specific products. Customer information is encrypted to ensure privacy. On the admin side, an intuitive CRM was developed for Lead tracking, with a multi-level role system that ensures confidentiality. An innovative search method was implemented to manage encrypted data efficiently.\n\nThe application also includes endpoints to receive Leads from various external applications, centralizing motorcycle data and simplifying statistical analysis.\n\nThe system was built with an extensible structure to easily support future functionality additions.",
+      "contribution": "I developed the backend using Laravel and optimized inventory processes."
     },
     "ekar": {
       "title": "Ekar de Gas",
-      "description": "E-commerce Platform",
+      "description": "Ecommerce Platform",
       "long_description": "",
-      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+      "contribution": "I developed the backend using Laravel and optimized inventory processes."
     },
     "tubin": {
       "title": "Tubin",
-      "description": "E-commerce Platform",
+      "description": "Ecommerce Platform",
       "long_description": "",
-      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+      "contribution": "I developed the backend using Laravel and optimized inventory processes."
     },
     "solarudg": {
       "title": "Solar UDG",
-      "description": "University Final Project",
+      "description": "Final university project",
       "long_description": "",
-      "contribution": "I developed the backend with Laravel and optimized the inventory processes."
+      "contribution": "I developed the backend using Laravel and optimized inventory processes."
     },
     "portfolio": {
       "title": "My Portfolio",
       "description": "Personal site to showcase my projects and skills",
-      "contribution": "Complete design and development using Nuxt 3 and Tailwind CSS"
+      "contribution": "Full design and development using Nuxt 3 and Tailwind CSS."
     }
   },
   "experiences": {
     "university": {
       "title": "CUCEI - Computer Engineering",
-      "description": "Graduated from the Computer Engineering program."
+      "description": "Graduated with a degree in Computer Engineering."
     },
     "mtsoftech": {
       "description": "My first job as a programmer."
     },
     "cucei": {
-      "title": "CUCEI Development Area",
-      "description": "I started with my internship and continued as a scholarship holder in a very friendly and collaborative environment."
+      "title": "CUCEI Development Department",
+      "description": "Started as an intern and continued as a scholarship holder. A very friendly and collaborative environment."
     },
     "netcommerce": {
-      "description": "Netcommerce is a digital marketing agency with over 26 years of experience, specializing in web design and development, pioneers in e-commerce in Mexico, and social media experts."
+      "description": "Netcommerce is a digital marketing agency with over 26 years of experience, specializing in web design and development. They are pioneers in e-commerce in Mexico and experts in social media."
     }
   }
 }

@@ -15,7 +15,7 @@
                 </h2>
                 <FloatLabel class="w-full mt-8">
                     <Textarea id="message" v-model="body" rows="10" cols="30" class="resize-none w-full" required />
-                    <label for="message">Tu mensaje:</label>
+                    <label for="message">{{ $t('contactme.label') }}:</label>
                 </FloatLabel>
                 <div class="w-full flex justify-end mt-2">
                     <Button :bg-color="bgColor" :href="mailto">
