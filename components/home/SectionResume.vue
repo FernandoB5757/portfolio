@@ -20,12 +20,9 @@
                 <div class="h-fit w-full !relative">
                     <Timeline
                         :items="experiences"
-                        title="Beam me up"
-                        description="Show the timeline in style"
                         :height="1750"
                     >
                     </Timeline> 
-                    <!-- <Timeline></Timeline>  -->
                 </div>
             </div>
         </div>
