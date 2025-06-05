@@ -21,19 +21,32 @@
               <Icon name="heroicons:x-mark" class="text-lg text-primary"/>
           </Button>
       </div>
-      <div class="modal-body relative flex-1 p-4">
-        <div class="flex gap-8">
+      <div class="modal-body">
+        <div class="flex flex-col lg:flex-row gap-8">
 
-          <div class="w-full md:w-1/2">
-            <Image
-              :src="project.image.src"
-              :alt="project.image.alt"
-              class="details-image"
-              preview
-            />
+          <div class="w-full lg:w-1/2">
+
+            <Image :alt="project.image.alt" preview>
+                <template #image>
+                    <NuxtImg :src="project.image.src" 
+                      format="webp"
+                      class="details-image"
+                      loading="lazy"
+                    />
+                </template>
+                 <template #preview="slotProps">
+                    <NuxtImg :src="project.image.src" 
+                         :img-attrs="{
+                                style: slotProps.style, 
+                                width: 1280, 
+                                height: 720, 
+                                loading: 'lazy'}" 
+                      />
+                  </template>
+            </Image>
           </div>
 
-          <div class="w-full md:w-1/2">
+          <div class="w-full lg:w-1/2">
             <h3 class="mb-5 text-4xl font-bold leading-snug">
               {{ project.title }}
             </h3>
@@ -126,7 +139,6 @@
 
 <script setup lang="ts">
 import type { ProjectI18n } from '~/types/project'
-// import { useTechnologies } from '@/composables/useTechnologies'
 
 const props = defineProps<{
   project: ProjectI18n
@@ -135,7 +147,7 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:visible'])
 
-const { t } = useI18n()
+const { locale,t } = useI18n()
 // const { getTechnologyById } = useTechnologies()
 
 const localVisible = computed({
@@ -144,21 +156,32 @@ const localVisible = computed({
 })
 
 const formatDate = (dateString: string) => {
-  return new Date(dateString).toLocaleDateString('es-MX', {
-    year: 'numeric',
-    month: 'long'
-  })
+
+  let localeDate = locale.value == 'es' ? 'es-MX' : 'en-US';
+  return new Date(dateString)
+    .toLocaleDateString(localeDate, {
+      year: 'numeric',
+      month: 'long'
+    })
 }
 </script>
 
 <style scoped>
 
+.p-image{
+  @apply w-full h-full;
+}
+
+.modal-body{
+  @apply relative p-4 overflow-y-auto;
+
+}
 .info-list {
   @apply mt-6;
 }
 
 .info-list ul {
-  @apply flex list-none;
+  @apply flex list-none flex-col;
 }
 
 .info-list li{
@@ -174,7 +197,7 @@ const formatDate = (dateString: string) => {
 }
 
 .details-image {
-  @apply w-full h-72 object-cover rounded-lg;
+  @apply object-fill rounded-lg;
 }
 
 .details-meta {
