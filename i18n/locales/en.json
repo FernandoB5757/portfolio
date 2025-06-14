@@ -65,18 +65,18 @@
   },
   "experiences": {
     "university": {
-      "title": "CUCEI - Computer Engineering",
-      "description": "Graduated with a degree in Computer Engineering."
+        "title": "CUCEI - Computer Engineering",
+        "description": "Graduated with a degree in Computer Engineering.\n CUCEI is part of the University of Guadalajara, one of the most prestigious educational institutions in Mexico. \n\n During my time at CUCEI, I gained a solid foundation in programming, databases, and software development, which allowed me to develop essential technical and analytical skills for my career as a software developer."
     },
     "mtsoftech": {
-      "description": "My first job as a programmer."
+        "description": "My first job as a web developer, where I learned a lot about software development and the importance of teamwork.\n\n This experience gave me my first professional lessons and valuable knowledge that helped shape my career."
     },
     "cucei": {
-      "title": "CUCEI Development Department",
-      "description": "Started as an intern and continued as a scholarship holder. A very friendly and collaborative environment."
+        "title": "CUCEI Development Department",
+        "description": "I started here as an intern and later became a scholarship holder in a friendly and collaborative environment.\n\n During this time, I learned a lot about web development, strengthened my teamwork skills, and focused on writing clean and maintainable code. It was an incredible and warm team, where I built friendships and gained valuable experience."
     },
     "netcommerce": {
-      "description": "Netcommerce is a digital marketing agency with over 26 years of experience, specializing in web design and development. They are pioneers in e-commerce in Mexico and experts in social media."
+        "description": "Netcommerce is a digital marketing agency with over 26 years of experience, specializing in web design and development. They are pioneers of e-commerce in Mexico and experts in social media.\n\n At Netcommerce, I’ve developed both technical and soft skills, working on legacy web applications as well as projects from scratch. I’ve also improved my leadership abilities, teamwork, and even personal skills. I’ve had the opportunity to work alongside an amazing and talented team."
     }
-  }
+}
 }

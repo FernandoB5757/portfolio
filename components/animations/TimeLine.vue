@@ -129,6 +129,7 @@ const heightTransform = useTransform(scrollYProgress, [0, 1], [0, props.height +
 .description{
     font-size: 18px;
     line-height: 28px;
+    @apply whitespace-pre-line;
 }
 .card{
   @apply rounded-lg mt-4 mb-8 py-4 px-4 transition duration-700 border

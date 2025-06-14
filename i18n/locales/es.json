@@ -66,17 +66,17 @@
     "experiences" : {
         "university": {
             "title": "CUCEI - Ingeniería Informática",
-            "description": "Graduado de la carrera de informatica."
+            "description": "Graduado de la carrera de informática.\n CUCEI es la Universidad de Guadalajara, una de las instituciones educativas más importantes de México. \n\n Durante mi tiempo en CUCEI, adquirí una sólida base en programación, bases de datos, y desarrollo de software, lo que me permitió desarrollar habilidades técnicas y analíticas esenciales para mi carrera como desarrollador de software."
         },
         "mtsoftech": {
-            "description": "Mi primer trabajo como programador."
+            "description": "Mi primer trabajo como desarrollador web, donde aprendí mucho sobre el desarrollo de software y la importancia de la colaboración en equipo.\n\n De este lugar me lleve mis primeras experiencias laborales y un gran aprendizaje."
         },
         "cucei": {
             "title": "Área de Desarrollo CUCEI",
-            "description": "Inicie con mis practicas y continue como becario un ambiente muy amigable y colaborativo."
+            "description": "Inicie con mis prácticas y continúe como becario un ambiente muy amigable y colaborativo. \n\n En este lugar aprendí mucho sobre desarrollo web, desarrollé mis habilidades de trabajo en equipo, además del desarrollo de código limpio y mantenibles. Un equipo impresionante y cálido, me llevé amistades y un gran aprendizaje."
         },
         "netcommerce": {
-            "description": "Netcommerce es una agencia de marketing digital con más de 26 años de experiencia, especializados en diseño y desarrollo web, pioneros del comercio electrónico en México y expertos en redes sociales."
+            "description": "Netcommerce es una agencia de marketing digital con más de 26 años de experiencia, especializados en diseño y desarrollo web, pioneros del comercio electrónico en México y expertos en redes sociales. \n\n En Netcommerce, he desarrollado muchas habilidades blandas como técnicas, desde el desarrollo de aplicaciones web legacy hasta aplicaciones desde sus inicios, además de aprender infinidad de habilidades técnicas enfocadas en desarrollo web, mejoré mis habilidades como líder, como equipo, inclusive como amigo, y he tenido la oportunidad de trabajar con un equipo increíble y talentoso."
         }
     }
 }
