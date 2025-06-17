@@ -20,15 +20,13 @@
                 <div class="h-fit w-full !relative">
                     <Timeline
                         :items="experiences"
-                        :height="1750"
+                        :height="2500"
                     >
                     </Timeline> 
                 </div>
             </div>
         </div>
     </div>
-
-     
 </template>
 
 <script setup lang="ts">

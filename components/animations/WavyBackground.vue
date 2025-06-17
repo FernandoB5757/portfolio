@@ -1,5 +1,5 @@
 <template>
-  <div :class="cn('w-screen', props.containerClass)">
+  <div :class="cn('w-full', props.containerClass)">
       <div :class="cn('z-0',canvaClass)">
         <canvas
           id="canvas"
@@ -7,7 +7,7 @@
           :style="{ filter: isSafari ? `blur(${props.blur}px)` : undefined }"
         ></canvas>
       </div>
-      <div :class="cn('w-screen relative z-10', props.class)">
+      <div :class="cn('w-full relative z-10', props.class)">
         <slot />
       </div>
   </div>
