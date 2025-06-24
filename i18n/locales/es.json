@@ -32,7 +32,11 @@
       "end" : "Fecha Fin",
       "present" : "Presente"
     },
+    "aboutme_content": "Ingeniero en Informática egresado del CUCEI, Universidad de Guadalajara, con una sólida formación técnica y experiencia profesional en el Desarrollo Web.\nMi enfoque está en construir soluciones limpias, escalables y orientadas a negocio utilizando tecnologías modernas y guiándome por una filosofía clara de trabajo:",
+    "dont_be_a_coder": "No seas un codificador, sé un programador",
     "projects" : {
+      "header" : "Mi Portafolio",
+      "sub_header": "Explora mis contribuciones profesionales y proyectos destacados",
         "mimo": {
           "title": "MIMO - Motos",
           "description": "Plataforma de gestión para concesionarios de motocicletas",

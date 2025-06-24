@@ -29,10 +29,15 @@
             class="flex flex-col w-full md:w-2/3"
         >
             <h2 class="text-4xl md:text-5xl my-2 font-serif font-semibold">
-            {{  $t('aboutme') }}
+                {{  $t('aboutme') }}
             </h2>
-            <p class="text-sm md:text-xl my-2">
-                Curabitur in quis tempus duis, euismod potenti. Venenatis, ultrices litora pulvinar magnis nascetur varius pede mi. At fames, elit auctor, fusce. Sit phasellus libero morbi penatibus condimentum, lorem habitant. Hendrerit dapibus nec aliquet potenti, consequat. Commodo torquent vivamus orci nullam etiam blandit netus odio. Maecenas. Egestas.
+            <p class="text-sm md:text-xl my-2 whitespace-pre-line">
+                {{  $t('aboutme_content') }}
+                <blockquote class="p-4 my-4 border-s-4 border-primary-300 dark:border-primary-900">
+                    <p class="text-xl italic font-medium leading-relaxed ">
+                        "{{  $t('dont_be_a_coder') }}"
+                    </p>
+                </blockquote>
             </p>
             <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
                 <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->

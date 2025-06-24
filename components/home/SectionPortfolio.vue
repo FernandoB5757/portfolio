@@ -9,10 +9,10 @@
                         class="p-8"
                     >
                         <span class="text-primary block uppercase text-sm font-medium tracking-widest leading-4">
-                            Visit my portfolio and keep your feedback
+                            {{  $t('projects.sub_header') }}
                         </span>
                         <h2 class="text-6xl font-bold leading-tight  mt-4 mb-0">
-                            My Portfolio
+                            {{  $t('projects.header') }}
                         </h2>
                     </BlurReveal>
                 </div>

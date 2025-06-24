@@ -32,7 +32,11 @@
     "end": "End Date",
     "present": "Present"
   },
+  "aboutme_content": "Computer Science Engineer graduated from CUCEI, University of Guadalajara, with strong technical background and professional experience in Web Development.\nMy focus is on building clean, scalable and business-oriented solutions using modern technologies, guided by a clear work philosophy:",
+  "dont_be_a_coder": "Don't be a coder, be a programmer",
   "projects": {
+    "header" : "My Portfolio",
+    "sub_header" : "Explore my professional contributions and project portfolio",
     "mimo": {
       "title": "MIMO - Motorcycles",
       "description": "Management platform for motorcycle dealerships",

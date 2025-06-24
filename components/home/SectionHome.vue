@@ -75,11 +75,6 @@
                                 />
                             </h1>
                         </div>
-                        <div>
-                            <p class="text-lg pr-1 opacity-90">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
                     </BlurReveal>
                 </div>
             </div>
