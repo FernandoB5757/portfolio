@@ -26,19 +26,19 @@
       <BlurReveal
             :delay="0.2"
             :duration="0.75"
-            class="flex flex-col w-full md:w-2/3"
+            class="flex flex-col w-full md:w-2/3 p-5 md:p-0"
         >
             <h2 class="text-4xl md:text-5xl my-2 font-serif font-semibold">
                 {{  $t('aboutme') }}
             </h2>
-            <p class="text-sm md:text-xl my-2 whitespace-pre-line">
+            <div class="text-sm md:text-xl my-2 whitespace-pre-line">
                 {{  $t('aboutme_content') }}
                 <blockquote class="p-4 my-4 border-s-4 border-primary-300 dark:border-primary-900">
                     <p class="text-xl italic font-medium leading-relaxed ">
                         "{{  $t('dont_be_a_coder') }}"
                     </p>
                 </blockquote>
-            </p>
+            </div>
             <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
                 <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->
             </div>

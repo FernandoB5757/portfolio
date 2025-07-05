@@ -23,6 +23,14 @@
             {{ project.description }}
           </p>
       </div>
+      <div class="flex flex-row flex-wrap gap-1">
+        <Tag v-for="techId in project.technologies" 
+              :key="techId"
+              :value="techId"
+              rounded
+              class="bg-primary-500/10 text-primary-600 dar:bg-primary-800/10 dark:text-primary-800"
+          ></Tag>
+      </div>
     </div>
 
     <ProjectDetails 

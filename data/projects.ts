@@ -18,6 +18,8 @@ export const projects: Project[] = [
         'typescript',
         'tailwindcss',
         'alpinejs',
+        'redis',
+        'meilisearch'
       ],
     date: {
       start: '2024-04',
