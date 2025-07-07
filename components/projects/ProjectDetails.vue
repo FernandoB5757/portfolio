@@ -123,9 +123,13 @@
         <hr class="mb-8 mt-3 border-primary-100 dark:border-black">
 
         <div class="details-section h-80">
+          <h4 class="text-xl font-bold">Descripción del proyecto</h4>
+          <br>
           <p class="section-content">
             {{ project.long_description }}
           </p>
+          <br>
+          <h4 class="text-xl font-bold">Contribuciones</h4>
           <p class="section-content mt-5">
               {{ project.contribution }}
           </p>
