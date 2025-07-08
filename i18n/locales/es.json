@@ -45,9 +45,9 @@
         },
         "ekar": {
           "title": "Ekar de Gas",
-          "description": "Plataforma Ecommerce",
-          "long_description": "",
-          "contribution": "Desarrollé el backend con Laravel y optimicé los procesos de inventario"
+          "description": "Plataforma e-commerce para una empresa historica en Jalisco.",
+          "long_description": "Aplicación e-commerce desarrollada a medida para Ekar de Gas, integrando todos los elementos que conlleva una tienda en línea: productos, marcas, categorías, reseñas, stock, almacenes, clientes, órdenes, métodos de envío, métodos de pago, entre otros.\n La aplicación tiene como valor agregado una conexión directa con SAP para la gestión de productos, stock en almacenes, precios, descuentos, así como la creación automática de órdenes.",
+          "contribution": "Dentro de mis contribuciones, destaco la integración con SAP, un tema que fue nuevo para mí y bastante intensivo, ya que se realizó una conexión directa utilizando XML, además de consultas directas (RAW queries) a la base de datos. Esto implicó un proceso de investigación considerable para poder entender y aplicar lo necesario para lograr una conexión funcional con SAP.\nPor otro lado, trabajé en la creación de una paquetería para el manejo del carrito de compras, así como en la implementación completa del proceso de checkout. \n\n Este fue mi primer acercamiento a un e-commerce, y a partir de aquí aprendí y adquirí mucha experiencia sobre lo que implica construir una tienda en línea desde cero. Actualmente, sigo dando mantenimiento a la aplicación, mejorando módulos, realizando optimizaciones y desarrollé una nueva paquetería para integrar el nuevo método de pago con Mercado Pago."
         },
         "tubin": {
           "title": "Tubin",

@@ -47,7 +47,7 @@ export const projects: Project[] = [
         'typescript',
         'tailwindcss',
         'alpinejs',
-        'filament'
+        'filament',
       ],
     date: {
       start: '2024-04',
@@ -55,7 +55,7 @@ export const projects: Project[] = [
       isCurrent: true
     },
     meta: {
-      keywords: ['ecommerce', 'php','laravel','mercadopago','sap','xml']
+      keywords: ['e-commerce', 'php','laravel','mercadopago','sap','xml','packages']
     }
   },
 

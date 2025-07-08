@@ -133,6 +133,14 @@
           <p class="section-content mt-5">
               {{ project.contribution }}
           </p>
+           <div class="flex flex-wrap gap-2 mt-5">
+                <Tag v-for="keyword in project.meta?.keywords" 
+                    :key="keyword"
+                    :value="keyword"
+                    rounded
+                    class="bg-cyan-500/10 text-cyan-600 dar:bg-cyan-800/10 dark:text-cyan-800 hover:bg-cyan-500/5"
+                ></Tag>
+          </div>
         </div>     
 
       </div>
