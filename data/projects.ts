@@ -88,7 +88,7 @@ export const projects: Project[] = [
   {
     id: 'solarudg',
     image: {
-      src: '/images/projects/tubin.png',
+      src: '/images/projects/solarudg.webp',
       alt: 'landing page mimo',
       width: 1200,
       height: 630
@@ -97,16 +97,17 @@ export const projects: Project[] = [
         'laravel',
         'php',
         'javascript',
+        'chartjs',
         'livewire',
         'alpinejs',
         'tailwindcss'
       ],
     date: {
-      start: '2024-08',
-      isCurrent: true
+      start: '2022-11',
+      end: '2023-04'
     },
     meta: {
-      keywords: ['ecommerce', 'php','laravel','mercadopago','sap','xml']
+      keywords: ['php','laravel','chartjs','api','udg','solar']
     }
   },
 ] as const
