@@ -52,8 +52,8 @@
     "tubin": {
       "title": "Tubin",
       "description": "Ecommerce Platform",
-      "long_description": "",
-      "contribution": "I developed the backend using Laravel and optimized inventory processes."
+      "long_description": "Custom e-commerce application developed for Tubin, integrating all the essential elements of an online store: products, brands, categories, stock, customers, orders, among others.\nThe application includes the added value of a connection with Oracle through the use of APIs, for managing products, stock, prices, as well as creating orders directly in the client's system.",
+      "contribution": "In this project, I had a role closer to a Senior profile, as I was in charge of a team. I was responsible for making decisions continuously to solve problems, even having direct meetings with the client. I also constantly reviewed the work done by juniors and was in charge of performing deployments to testing environments. If any bug appeared, I handled it with hotfixes.\n\nOn the technical side, working as a programmer, we implemented the connection with Oracle using the Strategy Pattern. This allowed the application to avoid depending on a sandbox environment from the client or a direct connection to their API. Instead, an internal environment was created within the application itself, allowing anyone who installed the project to use the application without needing access to the external API."
     },
     "solarudg": {
       "title": "Solar UDG",

@@ -81,7 +81,7 @@ export const projects: Project[] = [
       isCurrent: true
     },
     meta: {
-      keywords: ['ecommerce', 'php','laravel','mercadopago','sap','xml']
+      keywords: ['ecommerce', 'php','laravel','oracle','strategy pattern']
     }
   },
 
