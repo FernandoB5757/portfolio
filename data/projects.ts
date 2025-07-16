@@ -132,4 +132,46 @@ export const projects: Project[] = [
       keywords: []
     }
   },
+
+  {
+    id: 'callcenter',
+    image: {
+      src: '/images/projects/solarudg.webp',
+      alt: 'menu jb_refacciones',
+      width: 1200,
+      height: 630
+    },
+    simple: true,
+    technologies: [
+        '.NET',
+        '.NET Desktop',
+        'C#'
+      ],
+    date: {
+      start: '2021-06',
+      end: '2023-08'
+    },
+    meta: {
+      keywords: []
+    }
+  },
+
+  {
+    id: 'insumos',
+    image: {
+      src: '/images/projects/solarudg.webp',
+      alt: 'menu jb_refacciones',
+      width: 1200,
+      height: 630
+    },
+    simple: true,
+    technologies: [],
+    date: {
+      start: '2021-06',
+      end: '2023-08'
+    },
+    meta: {
+      keywords: []
+    }
+  },
 ] as const

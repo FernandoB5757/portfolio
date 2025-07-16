@@ -71,6 +71,16 @@
           "title": "Mi Portafolio",
           "description": "Sitio personal para mostrar mis proyectos y habilidades",
           "contribution": "Diseño y desarrollo completo con Nuxt 3 y Tailwind CSS"
+        },
+        "callcenter": {
+          "title": "Honda Call center",
+          "description": "Honda México",
+          "long_description": "Sitio para equipo de callcenter y manejo de leads."
+        },
+        "insumos": {
+          "title": "Insumos Cerveceros",
+          "description": "Plataforma e-commerce",
+          "long_description": "Sitio para equipo de callcenter y manejo de leads."
         }
       },
     "experiences" : {

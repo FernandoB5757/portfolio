@@ -4,9 +4,10 @@ import { Image } from "./index"
 
 export interface Project {
   id: string
-  image: Image;
+  image: Image
   url?: string
   technologies: Technology['id'][]
+  simple?: boolean
   date: {
     start: string
     end?: string
@@ -22,5 +23,5 @@ export interface ProjectI18n extends Project{
   title: string
   description: string
   long_description?: string
-  contribution: string
+  contribution?: string
 }
