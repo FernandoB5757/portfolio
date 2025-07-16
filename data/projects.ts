@@ -110,4 +110,26 @@ export const projects: Project[] = [
       keywords: ['php','laravel','chartjs','api','udg','solar']
     }
   },
+
+  {
+    id: 'jb_refacciones',
+    image: {
+      src: '/images/projects/jb_refacciones.webp',
+      alt: 'menu jb_refacciones',
+      width: 1200,
+      height: 630
+    },
+    technologies: [
+        '.NET',
+        '.NET Desktop',
+        'C#'
+      ],
+    date: {
+      start: '2021-06',
+      end: '2023-08'
+    },
+    meta: {
+      keywords: []
+    }
+  },
 ] as const

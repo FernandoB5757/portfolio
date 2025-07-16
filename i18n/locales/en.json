@@ -65,7 +65,13 @@
       "title": "My Portfolio",
       "description": "Personal site to showcase my projects and skills",
       "contribution": "Full design and development using Nuxt 3 and Tailwind CSS."
-    }
+    },
+    "jb_refacciones": {
+          "title": "JB -  Auto Parts",
+          "description": "Desktop Application",
+          "long_description": "The application was developed to be used in an auto parts store, designed and created as a custom solution to cover all the business needs at the point of sale level. It was my first project outside the academic environment.\n\nThe application worked as a sales system, where all kinds of products typically sold in an auto parts store could be sold. It allowed adding customers, managing their credit and discounts, as well as assigning them to a company.\nAll types of products could be added, from auto parts to vehicle air fresheners.\nVehicles could also be registered by brand, model, and even versions of the model. A key feature was that auto parts were directly linked to vehicles based on their model and version.\nIn addition, the system managed a simple stock control and had a quick search tool to find the parts associated with a specific model or version.",
+          "contribution": "I developed this desktop application from scratch using C#. I also prepared it to be easily installed, to the point that I installed it on two computers in the business and set up the database on the company's server. In the end, the application was not used because many new needs came up that required further updates, but for me, it was my first real experience, and I learned a lot from that project."
+        }
   },
   "experiences": {
     "university": {
