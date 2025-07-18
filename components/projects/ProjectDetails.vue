@@ -94,6 +94,7 @@
               <Button
                 v-if="project.url"
                 :href="project.url" 
+                as="a"
                 target="_blank" 
                 rel="noopener"
                 severity="primary" 
