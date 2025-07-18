@@ -3,11 +3,15 @@
     <Drawer v-model:visible="showMenu">
         <template #header>
             <div class="flex items-center gap-2">
-                <Avatar image="/images/me-sm.png" 
-                    class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                <Avatar class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
                     size="xlarge" 
                     shape="circle" 
-                />
+                >
+                    <NuxtImg src="/images/me-sm.png" 
+                        width="64"
+                        height="64"
+                    />
+                </Avatar>
                 <p class="text-xl font-bold">
                     Fernando Barajas
                 </p>
@@ -30,12 +34,16 @@
     >
         <nav class="container flex justify-between px-5 py-3">
             <div class="h-16 mt-1">
-                <Avatar image="/images/me-sm.png" 
-                    class="rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+                <Avatar class="rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
                     :class="{ 'visible' : showHeaderBackground , 'hidden' : ! showHeaderBackground}"
                     size="xlarge" 
                     shape="circle" 
-                />
+                >
+                    <NuxtImg src="/images/me-sm.png"
+                        width="64"
+                        height="64"
+                    />
+                </Avatar>
             </div>
             <div class="flex items-end">
                 <div class="block md:hidden">

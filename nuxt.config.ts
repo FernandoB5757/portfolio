@@ -62,7 +62,45 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/images/me-sm.png',
+        '/_ipx/w_320&f_png/images/me-md.png',
+        '/_ipx/w_640&f_png/images/me-md.png',
+        '/_ipx/w_768&f_png/images/me-md.png',
+        '/_ipx/w_1024&f_png/images/me-md.png',
+        '/_ipx/w_1280&f_png/images/me-md.png',
+        '/_ipx/w_1536&f_png/images/me-md.png',
+        '/_ipx/w_2048&f_png/images/me-md.png',
+        '/_ipx/w_2560&f_png/images/me-md.png',
+        '/_ipx/w_3072&f_png/images/me-md.png',
+
+        '/_ipx/s_64x64/images/me-sm.png',
+        '/_ipx/s_128x128/images/me-sm.png',
+
+        '/_ipx/w_320&f_webp/images/me-md.png',
+        '/_ipx/w_640&f_webp/images/me-md.png',
+        '/_ipx/w_768&f_webp/images/me-md.png',
+        '/_ipx/w_1024&f_webp/images/me-md.png',
+        '/_ipx/w_1280&f_webp/images/me-md.png',
+        '/_ipx/w_1536&f_webp/images/me-md.png',
+        '/_ipx/w_2048&f_webp/images/me-md.png',
+        '/_ipx/w_2560&f_webp/images/me-md.png',
+        '/_ipx/w_3072&f_webp/images/me-md.png',
+
+
+        '/_ipx/_/images/projects/ekar.png',
+        '/_ipx/f_webp/images/projects/ekar.png',
+
+        '/_ipx/_/images/projects/jb_refacciones.webp',
+        '/_ipx/f_webp/images/projects/jb_refacciones.webp',
+        
+        '/_ipx/_/images/projects/mimo.png',
+        '/_ipx/f_webp/images/projects/mimo.png',
+
+        '/_ipx/_/images/projects/solarudg.webp',
+        '/_ipx/f_webp/images/projects/solarudg.webp',
+
+        '/_ipx/_/images/projects/tubin.png',
+        '/_ipx/f_webp/images/projects/tubin.png'
+
       ]
     }
   },

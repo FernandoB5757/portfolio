@@ -23,8 +23,8 @@
             {{ project.description }}
           </p>
       </div>
-      <div class="flex flex-row flex-wrap gap-1">
-        <Tag v-for="techId in project.technologies" 
+      <div class="flex flex-row flex-wrap gap-1 mt-2">
+        <Tag v-for="techId in technologies" 
               :key="techId"
               :value="techId"
               rounded
@@ -51,6 +51,10 @@ const props = defineProps<{
 
 const { t } = useI18n()
 const isOpen = ref(false)
+const technologies = computed(
+  () => props.project.technologies.slice(0,4)
+)
+
 </script>
 
 <style lang="scss" scoped>
@@ -60,7 +64,8 @@ const isOpen = ref(false)
     rounded-lg shadow-lg 
   bg-white hover:bg-primary-100 border-primary-200
     dark:bg-surface-900 dark:border-surface-700 dark:hover:bg-surface-950
-    transition ease-in-out duration-300;
+    transition ease-in-out duration-300
+    overflow-hidden;
 }
 
 .project-picture {

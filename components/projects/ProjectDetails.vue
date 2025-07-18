@@ -79,7 +79,7 @@
             </div>
 
             <div class="details-section">
-              <div class="flex flex-wrap gap-2">
+              <div class="flex flex-wrap gap-2 mt-2">
                   <Tag v-for="techId in project.technologies" 
                       :key="techId"
                       :value="techId"
