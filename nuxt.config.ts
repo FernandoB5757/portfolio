@@ -58,5 +58,12 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.API_URL
     }
-  }
+  },
+  nitro: {
+    prerender: {
+      routes: [
+        '/images/me-sm.png',
+      ]
+    }
+  },
 })
