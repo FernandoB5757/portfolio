@@ -6,7 +6,7 @@
                     JFGB
                 </span>
                 <div class="flex flex-col items-center gap-6 mb-8">
-                    <div
+                    <!-- <div
                         class="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
                         <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 dark:text-white">About</a>
                         <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 dark:text-white">Features</a>
@@ -15,23 +15,23 @@
                         <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 dark:text-white">Partners</a>
                         <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 dark:text-white">Help</a>
                         <a href="javascript:void(0)" class="text-gray-600 hover:text-gray-900 dark:text-white">Terms</a>
-                    </div>
+                    </div> -->
                     <div class="flex items-center gap-8">
-                        <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <!-- <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:facebook-f"></Icon>
-                        </a>
-                        <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        </a> -->
+                        <!-- <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:x-twitter"></Icon>
-                        </a>
-                        <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        </a> -->
+                        <a href="https://github.com/FernandoB5757" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:github"></Icon>
                         </a>
-                        <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <a href="https://www.linkedin.com/in/jes%C3%BAs-fernando-barajas-galindo-965149285/" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:linkedin-in"></Icon>
                         </a>
-                        <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
+                        <!-- <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:instagram"></Icon>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
