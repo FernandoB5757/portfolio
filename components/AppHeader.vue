@@ -3,7 +3,7 @@
     <Drawer v-model:visible="showMenu">
         <template #header>
             <div class="flex items-center gap-2">
-                <Avatar image="/images/me-xl.png" 
+                <Avatar image="/images/me-sm.png" 
                     class="p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
                     size="xlarge" 
                     shape="circle" 
@@ -14,7 +14,7 @@
             </div>
         </template>
         <p class="description">
-            PHP Developer, Web Developer, Full Stack Developer, Software Engineer
+            {{ $t('phrases.'+ randomFloat) }}
         </p>
         <div class="border-b border-gray-300 dark:border-gray-500 mt-3"></div>
         <AppMenu/>
@@ -30,7 +30,7 @@
     >
         <nav class="container flex justify-between px-5 py-3">
             <div class="h-16 mt-1">
-                <Avatar image="/images/me-xl.png" 
+                <Avatar image="/images/me-sm.png" 
                     class="rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
                     :class="{ 'visible' : showHeaderBackground , 'hidden' : ! showHeaderBackground}"
                     size="xlarge" 
@@ -62,7 +62,6 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 
-
 const { y: verticalWindowScroll } = useWindowScroll()
 
 const showMenu = ref(false)
@@ -78,6 +77,8 @@ const toggleMenu = () => {
 watch(verticalWindowScroll, async (value: number) => {
     showHeaderBackground.value = value > scrollThreshold.value
 })
+
+const randomFloat = Math.floor(Math.random() * 4);
 
 </script>
 

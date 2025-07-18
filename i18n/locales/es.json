@@ -82,7 +82,7 @@
           "description": "Plataforma e-commerce",
           "long_description": "Sitio para equipo de callcenter y manejo de leads."
         }
-      },
+    },
     "experiences" : {
         "university": {
             "title": "CUCEI - Ingeniería Informática",
@@ -98,5 +98,11 @@
         "netcommerce": {
             "description": "Netcommerce es una agencia de marketing digital con más de 26 años de experiencia, especializados en diseño y desarrollo web, pioneros del comercio electrónico en México y expertos en redes sociales. \n\n En Netcommerce, he desarrollado muchas habilidades blandas como técnicas, desde el desarrollo de aplicaciones web legacy hasta aplicaciones desde sus inicios, además de aprender infinidad de habilidades técnicas enfocadas en desarrollo web, mejoré mis habilidades como líder, como equipo, inclusive como amigo, y he tenido la oportunidad de trabajar con un equipo increíble y talentoso."
         }
+    },
+    "phrases": {
+      "0": "Cualquier tonto puede escribir código que una computadora entienda. Los buenos programadores escriben código que los humanos pueden entender.\n– Martin Fowler",
+      "1": "Primero, resuelve el problema. Después, escribe el código.\n– John Johnson",
+      "2": "La única forma de aprender un nuevo lenguaje de programación es escribiendo programas en él.\n– Dennis Ritchie",
+      "3": "El código es como el humor. Cuando tienes que explicarlo, es malo.\n– Cory House"
     }
 }
