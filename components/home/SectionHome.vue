@@ -21,20 +21,19 @@
                      rounded
                     shadow-2xl dark:shadow-primary-50/50 shadow-primary-500/50 "></div>
                 </div>
-                <Image src="/images/me-xl.png" preview 
-                    :pt:preview-mask:class="'w-full bg-transparent'"
-                >
+                <Image src="/images/me-xl.png"  :pt:preview-mask:class="'lw-full bg-transparent'">
                     <template #image>
-                        <NuxtPicture src="/images/me-xl.png" 
+                        <NuxtPicture src="/images/me-md.png" 
+                            preload
                             :img-attrs="{
                                 alt: 'Fernando Barajas', 
-                                width: 1024, 
-                                height: 1024, 
+                                width: 96, 
+                                height: 80, 
                                 class: 'rounded w-60 h-60 md:w-72 md:h-72 lg:w-96 lg:h-96 '}" 
                         />
                     </template>
-                    <template #preview="slotProps">
-                        <NuxtPicture src="/images/me-md.png" 
+                    <template #original="slotProps">
+                        <NuxtPicture src="/images/me-xl.png" 
                             :img-attrs="{
                                 alt: 'Fernando Barajas', 
                                 style: slotProps.style, 

@@ -44,6 +44,7 @@
                 height="500"
                 :draggable="false"
                 class="size-full rounded-3xl object-cover object-center"
+                format="webp"
               />
             </Motion>
           </AnimatePresence>
