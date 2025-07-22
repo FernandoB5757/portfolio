@@ -21,6 +21,14 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/image',
   ],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      htmlAttrs: {
+        class: 'scroll-smooth'
+      },
+    },
+  },
   primevue: {
     autoImport: false,
     components: {
@@ -91,6 +99,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
+        '/_ipx/_/logo.webp',
+
         '/_ipx/w_320&f_webp/images/me-md.png',
         '/_ipx/w_640&f_webp/images/me-md.png',
         '/_ipx/w_768&f_webp/images/me-md.png',
