@@ -30,7 +30,7 @@
 </template>
   
   <script setup lang="ts">
-  import { ref, computed, type HTMLAttributes, withDefaults, defineProps } from "vue";
+  import { ref, computed, type HTMLAttributes } from "vue";
   import { cn } from "@/lib/utils";
   
   const props = withDefaults(

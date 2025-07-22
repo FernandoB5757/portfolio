@@ -36,10 +36,9 @@
 <script setup lang="ts">
 import BlurReveal from '../animations/BlurReveal.vue';
 // import AnimatedTestimonials from '../animations/AnimatedTestimonials.vue';
-import { useTheme } from '~/composables/useTheme'
 import { useProjects } from '~/composables/useProjects';
 import ProjectList from '../projects/ProjectList.vue';
 
-const { projects, minorContributions } = useProjects()
+const { projects } = useProjects()
 
 </script>

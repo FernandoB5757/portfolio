@@ -37,7 +37,8 @@
                 </template>
                  <template #preview="slotProps">
                     <NuxtImg :src="project.image.src" 
-                         :img-attrs="{
+                        format="webp"
+                        :img-attrs="{
                                 style: slotProps.style, 
                                 width: 1280, 
                                 height: 720, 
@@ -187,7 +188,7 @@ const formatDate = (dateString: string) => {
 }
 
 .modal-body{
-  @apply relative p-4 overflow-y-auto;
+  @apply relative p-4 overflow-y-hidden;
 
 }
 .info-list {

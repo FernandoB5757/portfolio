@@ -9,10 +9,10 @@
                         class="p-8"
                     >
                         <span class="text-primary block uppercase text-sm font-medium tracking-widest leading-4">
-                            7+ Years of Experience
+                            {{  $t('experiences.sub_header') }}
                         </span>
                         <h2 class="text-6xl font-bold leading-tight  mt-4 mb-0">
-                            My Resume
+                            {{  $t('experiences.header') }}
                         </h2>
                     </BlurReveal>
                 </div>
@@ -33,7 +33,6 @@
 import BlurReveal from '../animations/BlurReveal.vue';
 import Timeline from '../animations/TimeLine.vue';
 import { useExperiences } from '~/composables/useExperiences'
-import { useTheme } from '~/composables/useTheme'
 
 const { experiences } = useExperiences();
 

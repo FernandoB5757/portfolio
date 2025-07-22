@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     id: 'university',
     order: 4,
     image: {
-      src: '/images/experiences/cucei.png',
+      src: '/images/experiences/udg.png',
       alt: 'UDG - CUCEI',
     },
     date: {

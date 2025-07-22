@@ -8,6 +8,7 @@
                     shape="circle" 
                 >
                     <NuxtImg src="/images/me-sm.png" 
+                        format="webp"
                         width="64"
                         height="64"
                     />
@@ -40,6 +41,7 @@
                     shape="circle" 
                 >
                     <NuxtImg src="/images/me-sm.png"
+                        format="webp"
                         width="64"
                         height="64"
                     />

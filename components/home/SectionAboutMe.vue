@@ -51,7 +51,6 @@
 import Orbit from '@/components/animations/Orbit.vue'
 import BlurReveal from '../animations/BlurReveal.vue';
 import { ORBIT_DIRECTION ,type OrbitTechnology} from "@/types/orbit";
-import { useTheme } from '~/composables/useTheme'
 
 
   let backTechnologies: Array<OrbitTechnology> = [

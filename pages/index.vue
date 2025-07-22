@@ -28,6 +28,19 @@ import SectionPortfolio from '@/components/home/SectionPortfolio.vue'
 import SectionResume from '@/components/home/SectionResume.vue'
 import SectionContactMe from '@/components/home/SectionContactMe.vue'
 
+const { t } = useI18n()
+const img = useImage()
+
+const title = 'JFBG | ' + t('portfolio');
+const description = t('seo.description');
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogImage: img("logo.webp")
+})
 </script>
 
 <style scoped>

@@ -21,11 +21,12 @@
     "Coming soon" : "Próximamente",
     "Send": "Enviar",
     "changelang": "Cambiar idioma",
+    "portfolio" : "Portafolio",
     "contactme":{
       "title": "¿Quieres conocerme?",
       "label": "Tu mensaje",
       "content": "Hola, tengo interés en tu perfil profesional porque...",
-      "emailsubject": "FB - Contact via portfolio"
+      "emailsubject": "FB - Contact via portafolio"
     },
     "dates": {
       "start" : "Fecha Inicio",
@@ -84,6 +85,8 @@
         }
     },
     "experiences" : {
+        "header": "Mi Experiencia",
+        "sub_header": "Más de 4 años De Experiencia",
         "university": {
             "title": "CUCEI - Ingeniería Informática",
             "description": "Graduado de la carrera de informática.\n CUCEI es la Universidad de Guadalajara, una de las instituciones educativas más importantes de México. \n\n Durante mi tiempo en CUCEI, adquirí una sólida base en programación, bases de datos, y desarrollo de software, lo que me permitió desarrollar habilidades técnicas y analíticas esenciales para mi carrera como desarrollador de software."
@@ -104,5 +107,8 @@
       "1": "Primero, resuelve el problema. Después, escribe el código.\n– John Johnson",
       "2": "La única forma de aprender un nuevo lenguaje de programación es escribiendo programas en él.\n– Dennis Ritchie",
       "3": "El código es como el humor. Cuando tienes que explicarlo, es malo.\n– Cory House"
+    },
+    "seo": {
+      "description": "JFBG - Mi portafolio personal, donde podrás conocerme más a profundidad en el ámbito laboral y profesional. Aquí comparto quién soy, mi experiencia como desarrollador, y mi enfoque en la creación de soluciones limpias y escalables."
     }
 }

@@ -21,6 +21,7 @@
   "Coming soon": "Coming Soon",
   "Send": "Send",
   "changelang": "Change Language",
+  "portfolio" : "Portfolio",
   "contactme": {
     "title": "Want to get in touch?",
     "label": "Your message",
@@ -74,6 +75,8 @@
         }
   },
   "experiences": {
+    "header": "My Resume",
+    "sub_header": "4+ Years of Experience",
     "university": {
         "title": "CUCEI - Computer Engineering",
         "description": "Graduated with a degree in Computer Engineering.\n CUCEI is part of the University of Guadalajara, one of the most prestigious educational institutions in Mexico. \n\n During my time at CUCEI, I gained a solid foundation in programming, databases, and software development, which allowed me to develop essential technical and analytical skills for my career as a software developer."
@@ -94,5 +97,8 @@
       "1": "First, solve the problem. Then, write the code.\n– John Johnson",
       "2": "The only way to learn a new programming language is by writing programs in it.\n– Dennis Ritchie",
       "3": "Code is like humor. When you have to explain it, it’s bad.\n– Cory House"
+    },
+    "seo": {
+      "description": "JFBG - This is my personal portfolio, where you can get to know me better in a professional and work environment. I share who I am, my experience as a developer, and my focus on building clean and scalable solutions."
     }
 }
