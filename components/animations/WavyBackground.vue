@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { createNoise3D } from "simplex-noise";
 import { cn } from "@/lib/utils";
-import { ref, onMounted, onBeforeUnmount, withDefaults, defineProps, computed } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed } from "vue";
 import { templateRef } from "@vueuse/core";
 import { useTheme }  from "@/composables/useTheme";
 

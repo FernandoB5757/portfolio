@@ -28,7 +28,6 @@
 </template>
 
 <script setup lang="ts">
-import { useTheme } from '~/composables/useTheme'
 import InteractiveGridPattern from '~/components/animations/InteractiveGridPattern.vue'
 const { t } = useI18n()
 
