@@ -22,6 +22,35 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
   primevue: {
+    autoImport: false,
+    components: {
+      include: [
+        'Button',
+        'Avatar',
+        'Textarea',
+        'Tag',
+        'Image',
+        'Floatlabel',
+        'Drawer',
+        'Forms',
+        'Dialog',
+        'ScrollTop'
+      ]
+    },
+    directives: {
+       include: [
+        'Button',
+        'Avatar',
+        'Textarea',
+        'Tag',
+        'Image',
+        'Floatlabel',
+        'Drawer',
+        'Forms',
+        'Dialog',
+        'ScrollTop'
+      ]
+    },
     options: {
       theme: {
         preset: Theme,
