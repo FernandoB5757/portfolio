@@ -74,6 +74,8 @@
         }
   },
   "experiences": {
+    "header": "My Resume",
+    "sub_header": "4+ Years of Experience",
     "university": {
         "title": "CUCEI - Computer Engineering",
         "description": "Graduated with a degree in Computer Engineering.\n CUCEI is part of the University of Guadalajara, one of the most prestigious educational institutions in Mexico. \n\n During my time at CUCEI, I gained a solid foundation in programming, databases, and software development, which allowed me to develop essential technical and analytical skills for my career as a software developer."

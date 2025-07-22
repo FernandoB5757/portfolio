@@ -188,7 +188,7 @@ const formatDate = (dateString: string) => {
 }
 
 .modal-body{
-  @apply relative p-4 overflow-y-auto;
+  @apply relative p-4 overflow-y-hidden;
 
 }
 .info-list {

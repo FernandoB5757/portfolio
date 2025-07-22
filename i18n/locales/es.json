@@ -84,6 +84,8 @@
         }
     },
     "experiences" : {
+        "header": "Mi Experiencia",
+        "sub_header": "Más de 4 años De Experiencia",
         "university": {
             "title": "CUCEI - Ingeniería Informática",
             "description": "Graduado de la carrera de informática.\n CUCEI es la Universidad de Guadalajara, una de las instituciones educativas más importantes de México. \n\n Durante mi tiempo en CUCEI, adquirí una sólida base en programación, bases de datos, y desarrollo de software, lo que me permitió desarrollar habilidades técnicas y analíticas esenciales para mi carrera como desarrollador de software."
