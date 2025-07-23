@@ -39,7 +39,7 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: img("logo.webp")
+  ogImage: img("images/logo.webp")
 })
 </script>
 
