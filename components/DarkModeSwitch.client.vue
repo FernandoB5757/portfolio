@@ -6,6 +6,8 @@
         variant="text" 
         rounded
         class="bg-transparent"
+        role="button"
+        :aria-label="$t('accessibility.changetheme')"
     >
         <template #icon>
             <Icon :name="selectedTheme.icon" />

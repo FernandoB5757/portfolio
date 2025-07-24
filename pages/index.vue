@@ -5,19 +5,19 @@
         </section>
         
         <section id="about-me" class="limit-elements">
-            <SectionAboutMe />
+            <SectionAboutMe hydrate-on-visible />
         </section>
 
         <section id="my-portfolio" class="limit-elements">
-            <SectionPortfolio />
+            <SectionPortfolio hydrate-on-visible />
         </section>
 
         <section id="my-resume" class="limit-elements">
-            <SectionResume />
+            <SectionResume hydrate-on-visible />
         </section>
 
         <section id="contact-with-me" class="limit-elements">
-            <SectionContactMe />
+            <SectionContactMe hydrate-on-visible />
         </section>
     </div>
 </template>

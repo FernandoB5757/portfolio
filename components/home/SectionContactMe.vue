@@ -18,7 +18,12 @@
                     <label for="message">{{ $t('contactme.label') }}:</label>
                 </FloatLabel>
                 <div class="w-full flex justify-end mt-2">
-                    <Button :bg-color="bgColor" :href="mailto">
+                    <Button type="button" 
+                        :bg-color="bgColor" 
+                        :href="mailto"
+                        role="button"
+                        :aria-label="$t('accessibility.submitform')"
+                    >
                     {{ $t('Send') }} 
                     </Button>
                 </div>

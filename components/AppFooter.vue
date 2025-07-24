@@ -23,10 +23,16 @@
                         <!-- <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">
                             <Icon name="fa6-brands:x-twitter"></Icon>
                         </a> -->
-                        <a href="https://github.com/FernandoB5757" class="text-grey-700 hover:text-grey-900">
+                        <a href="https://github.com/FernandoB5757" 
+                            class="text-grey-700 hover:text-grey-900"
+                            :aria-label="$t('accessibility.gotomy') + ' github'"
+                        >
                             <Icon name="fa6-brands:github"></Icon>
                         </a>
-                        <a href="https://www.linkedin.com/in/jes%C3%BAs-fernando-barajas-galindo-965149285/" class="text-grey-700 hover:text-grey-900">
+                        <a href="https://www.linkedin.com/in/jes%C3%BAs-fernando-barajas-galindo-965149285/"    
+                            class="text-grey-700 hover:text-grey-900"
+                            :aria-label="$t('accessibility.gotomy') + ' linkedin'"
+                        >
                             <Icon name="fa6-brands:linkedin-in"></Icon>
                         </a>
                         <!-- <a href="javascript:void(0)" class="text-grey-700 hover:text-grey-900">

@@ -110,5 +110,13 @@
     },
     "seo": {
       "description": "JFBG - Mi portafolio personal, donde podrás conocerme más a profundidad en el ámbito laboral y profesional. Aquí comparto quién soy, mi experiencia como desarrollador, y mi enfoque en la creación de soluciones limpias y escalables."
+    },
+    "accessibility": {
+      "gotohome" : "ir al inicio",
+      "changetheme" : "cambio de tema",
+      "submitform" : "enviar formulario",
+      "closemodal" : "cerrar modal",
+      "viewproject": "ver proyecto",
+      "gotomy": "ir a mi"
     }
 }

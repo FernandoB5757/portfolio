@@ -13,6 +13,7 @@
 
         canvaClass="absolute inset-0 h-[1000px] md:h-[800px]"
         :waveOpacity="0.2"
+        hydrate-on-idle
     >
         <div class="w-full md:w-1/3 xl:w-1/2" id="me-welcome-image">
             <div class="p-3 flex items-center justify-center relative">
@@ -78,12 +79,12 @@
                 </div>
             </div>
             <section class="pt-14 lg:pt-20 xl:pt-28 w-full relative">
-                <div class="flex flex-row items-center">
+                <div class="flex flex-row items-center gap-x-3 sm:gap-x-0">
                     <div class="w-1/2">
                         <span class="text-sm tracking-wide uppercase">
                             Find Witth me 
                         </span> 
-                        <div class="flex flex-row gap-3 uppercase">
+                        <div class="flex flex-row gap-1 sm:gap-3 uppercase">
                             <CardSpotlight
                                 v-for="(socialLink, key) in socialLinks"
                                 :key="key"
@@ -109,7 +110,7 @@
                         <span class="text-sm tracking-wide uppercase">
                             Best Skills on
                         </span>
-                        <ul class="flex flex-row gap-3">
+                        <div class="flex flex-row gap-1 sm:gap-3">
                             <CardSpotlight
                                 v-for="(skills, key) in bestSkills"
                                 :key="key"
@@ -123,7 +124,7 @@
                                     class="dark:text-surface-400 text-surface-500 hover:text-primary text-4xl" 
                                 />
                             </CardSpotlight>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -7,6 +7,9 @@
                 text 
                 size="large" 
                 class="w-full md:w-auto justify-start"
+                role="link"
+                :aria-label="$t('accessibility.gotohome')"
+                
             >
                 {{ $t('home') }}
             </Button>

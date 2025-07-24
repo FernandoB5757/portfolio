@@ -54,6 +54,7 @@
                         @click="toggleMenu" 
                         severity="secondary" 
                         :aria-label="$t('openmenu')"
+                        role="button"
                     >
                         <Icon name="heroicons:bars-3" class="text-2xl"/>
                     </Button>

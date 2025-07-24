@@ -17,7 +17,8 @@
             rounded 
             severity="secondary" 
             variant="outlined" 
-            aria-label="close modal"
+            role="button"
+            :aria-label="$t('accessibility.closemodal')"
           >
               <Icon name="heroicons:x-mark" class="text-lg text-primary"/>
           </Button>
@@ -100,8 +101,9 @@
                 rel="noopener"
                 severity="primary" 
                 variant="text"
-                aria-label="view project"
                 raised
+                role="link"
+                :aria-label="$t('accessibility.viewproject')"
               >
                 {{ t('view project') }} <Icon name="heroicons:arrow-right-circle" />
               </Button>
@@ -111,8 +113,9 @@
                 rel="noopener"
                 severity="primary" 
                 variant="text"
-                aria-label="view project"
                 raised
+                role="contentinfo"
+                :aria-label="$t('accessibility.viewproject')"
               >
                 Proximamente
               </Button>
@@ -188,7 +191,7 @@ const formatDate = (dateString: string) => {
 }
 
 .modal-body{
-  @apply relative p-4 overflow-y-hidden;
+  @apply relative p-4 overflow-y-auto lg:overflow-y-hidden;
 
 }
 .info-list {
