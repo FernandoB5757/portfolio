@@ -16,9 +16,9 @@
         </div>
         
         <div class="project-content">
-          <h5 class="project-title" @click="isOpen = true">
+          <div class="project-title" @click="isOpen = true">
             {{ project.title }}
-          </h5>
+          </div>
           <p>
             {{ project.description }}
           </p>

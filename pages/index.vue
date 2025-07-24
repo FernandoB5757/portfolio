@@ -33,6 +33,7 @@ const img = useImage()
 
 const title = 'JFBG | ' + t('portfolio');
 const description = t('seo.description');
+const head = useLocaleHead()
 
 useSeoMeta({
   title,
@@ -41,6 +42,13 @@ useSeoMeta({
   ogDescription: description,
   ogImage: img("images/logo.webp")
 })
+
+useHead(() => ({
+  htmlAttrs: {
+    lang: head.value.htmlAttrs?.lang,
+    dir: head.value.htmlAttrs?.dir
+  },
+}))
 </script>
 
 <style scoped>

@@ -19,10 +19,10 @@
                 </FloatLabel>
                 <div class="w-full flex justify-end mt-2">
                     <Button type="button" 
-                        :bg-color="bgColor" 
                         :href="mailto"
                         role="button"
                         :aria-label="$t('accessibility.submitform')"
+                        class="text-primary-100 dark:text-white"
                     >
                     {{ $t('Send') }} 
                     </Button>
@@ -36,8 +36,6 @@
 import InteractiveGridPattern from '~/components/animations/InteractiveGridPattern.vue'
 const { t } = useI18n()
 
-const isDark = computed(() => useColorMode().value == "dark")
-const bgColor = computed(() => (isDark.value ? "#000" : "#fff"))
 const body = ref(t('contactme.content'))
 
 const mailto = computed(() => {
