@@ -11,7 +11,7 @@
                         <span class="text-primary block uppercase text-sm font-medium tracking-widest leading-4">
                             {{  $t('experiences.sub_header') }}
                         </span>
-                        <h2 class="text-6xl font-bold leading-tight  mt-4 mb-0">
+                        <h2 class="text-5xl md:text-6xl font-bold leading-tight mt-4 mb-0">
                             {{  $t('experiences.header') }}
                         </h2>
                     </BlurReveal>

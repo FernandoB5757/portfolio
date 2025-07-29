@@ -35,9 +35,9 @@
                     }" 
                 />
                 <div class="heading">
-                  <h4 class="title">
+                  <div class="title">
                       {{ item.title }}
-                  </h4>
+                  </div>
                   <span class="block text-sm">
                       {{ item.date.start }}
                   </span>

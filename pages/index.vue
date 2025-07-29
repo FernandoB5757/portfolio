@@ -17,7 +17,7 @@
         </section>
 
         <section id="contact-with-me" class="limit-elements">
-            <SectionContactMe hydrate-on-visible />
+            <SectionContactMe />
         </section>
     </div>
 </template>
