@@ -3,7 +3,7 @@
         <div class="flex relative w-full p-3 content-center flex-wrap ">
             <div class="relative w-full">
                 <div class="text-center" id="my-portfolio-header">
-                    <BlurReveal
+                    <AnimationsBlurReveal
                         :delay="0.2"
                         :duration="0.75"
                         class="p-8"
@@ -14,12 +14,12 @@
                         <h2 class="text-6xl font-bold leading-tight  mt-4 mb-0">
                             {{  $t('projects.header') }}
                         </h2>
-                    </BlurReveal>
+                    </AnimationsBlurReveal>
                 </div>
 
                 <div id="my-portfolio-projects" class="w-full relative">
                     <div class="flex">
-                        <ProjectList :projects="projects" />
+                        <ProjectList :projects="projects" hydrate-on-idle />
                     </div>
                 </div>
 
@@ -34,7 +34,6 @@
 </template>
 
 <script setup lang="ts">
-import BlurReveal from '../animations/BlurReveal.vue';
 // import AnimatedTestimonials from '../animations/AnimatedTestimonials.vue';
 import { useProjects } from '~/composables/useProjects';
 import ProjectList from '../projects/ProjectList.vue';

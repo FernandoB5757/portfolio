@@ -46,6 +46,10 @@ export default <Partial<Config>>{
           0 0 2px rgb(var(--color-blue-400)),
           0 0 5px rgb(var(--color-blue-500))
         `
+      },
+      screens: {
+        '3xl': '1920px',
+        // => @media (min-width: 1px) { ... }
       }
     }
   }

@@ -1,11 +1,12 @@
 <template>
     <div class="background-container">
         <div class="background-component">
-            <InteractiveGridPattern
+            <AnimationsInteractiveGridPattern
                 :class="'[mask-image:radial-gradient(650px_circle_at_center,white,transparent)]'"
                 :squares="[80, 80]"
                 squares-class-name="bg:hover:fill-primary-100 hover:fill-primary-500"
-                hydrate-on-idle
+                :hydrate-after="2000"
+                hydrate-on-visible
             />
         </div>
 
@@ -34,7 +35,6 @@
 </template>
 
 <script setup lang="ts">
-import InteractiveGridPattern from '~/components/animations/InteractiveGridPattern.vue'
 const { t } = useI18n()
 
 const body = ref(t('contactme.content'))

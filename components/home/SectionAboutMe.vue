@@ -7,23 +7,28 @@
             <span class="pointer-events-none text-center font-semibold leading-none">
                 <Icon
                     name="gis:earth-america"
-                    class="text-9xl"
+                    class="text-9xl text-primary-900"
                 />
             </span>
 
-            <Orbit v-for="technology in back" 
+            <AnimationsOrbit v-for="technology in back" 
                 class="size-[30px] items-center justify-center border-none bg-transparent"
                 :duration="technology.duration"
                 :delay="technology.delay"
                 :radius="technology.radius"
                 :direction="technology.direction"
             >
-                <Image :src="technology.icon" alt="Image" class="w-10 h-10" />
-            </Orbit>
+                <NuxtImg :src="technology.icon" 
+                    :alt="'Image of ' +  technology.slug" 
+                    class="w-10 h-10"
+                    width="40"
+                    height="40" 
+                />
+            </AnimationsOrbit>
 
         </div>
       </div>
-      <BlurReveal
+      <AnimationsBlurReveal
             :delay="0.2"
             :duration="0.75"
             class="flex flex-col w-full md:w-2/3 p-5 md:p-0"
@@ -42,16 +47,18 @@
             <div class="flex flex-wrap gap-4 md:gap-8 py-4 md:y-8">
                 <!-- <Tag :value="technology" v-for="technology in technologies"></Tag> -->
             </div>
-        </BlurReveal>
+        </AnimationsBlurReveal>
     </div>
 </template>
 
 <script setup lang="ts">
-
-import Orbit from '@/components/animations/Orbit.vue'
-import BlurReveal from '../animations/BlurReveal.vue';
+import { defineAsyncComponent, hydrateOnIdle } from 'vue'
 import { ORBIT_DIRECTION ,type OrbitTechnology} from "@/types/orbit";
 
+const AnimationsOrbit = defineAsyncComponent({
+  loader: () => import('@/components/animations/Orbit.vue'),
+  hydrate: hydrateOnIdle()
+})
 
   let backTechnologies: Array<OrbitTechnology> = [
     //back
@@ -269,7 +276,8 @@ import { ORBIT_DIRECTION ,type OrbitTechnology} from "@/types/orbit";
   ];
 
   let back = backTechnologies.map(function (item: OrbitTechnology) {
-    item.icon = `https://cdn.simpleicons.org/${item.slug}/000000/C0C0C0`
+    // item.icon = `https://cdn.simpleicons.org/${item.slug}/000000/C0C0C0`
+    item.icon = `https://cdn.simpleicons.org/${item.slug}/1e40af`
     return item;
   });
 

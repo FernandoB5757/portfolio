@@ -1,45 +1,41 @@
 <template>
-    <div class="py-16 relative ml-auto mr-auto flex">
-        <div class="flex relative w-full p-3 content-center flex-wrap ">
-            <div class="relative w-full">
-                <div class="text-center" id="my-portfolio-header">
-                    <BlurReveal
-                        :delay="0.2"
-                        :duration="0.75"
-                        class="p-8"
-                    >
-                        <span class="text-primary block uppercase text-sm font-medium tracking-widest leading-4">
-                            {{  $t('experiences.sub_header') }}
-                        </span>
-                        <h2 class="text-5xl md:text-6xl font-bold leading-tight mt-4 mb-0">
-                            {{  $t('experiences.header') }}
-                        </h2>
-                    </BlurReveal>
-                </div>
-                
-                <div class="h-fit w-full !relative">
-                    <Timeline
-                        :items="experiences"
-                        :height="2500"
-                    >
-                    </Timeline> 
-                </div>
-            </div>
-        </div>
+  <section class="py-16 relative container mx-auto">
+    <header id="my-portfolio-header" class="text-center mb-12">
+      <BlurReveal :delay="0.2" :duration="0.75" class="p-8">
+        <span class="text-primary block uppercase text-sm font-medium tracking-widest leading-4">
+          {{ $t('experiences.sub_header') }}
+        </span>
+        <h2 class="text-5xl md:text-6xl font-bold leading-tight mt-4">
+          {{ $t('experiences.header') }}
+        </h2>
+      </BlurReveal>
+    </header>
+
+    <div class="relative w-full h-fit">
+      <AnimationsTimeLine
+        :items="experiences"
+        :height="2500"
+        hydrate-on-visible
+      />
     </div>
+  </section>
 </template>
 
 <script setup lang="ts">
+// import { defineAsyncComponent, hydrateOnVisible } from 'vue'
+
 import BlurReveal from '../animations/BlurReveal.vue';
-import Timeline from '../animations/TimeLine.vue';
-import { useExperiences } from '~/composables/useExperiences'
+import { useExperiences } from '~/composables/useExperiences';
+
+// const Timeline = defineAsyncComponent({
+//   loader: () => import('../animations/TimeLine.vue'),
+//   hydrate: hydrateOnVisible()
+// })
 
 const { experiences } = useExperiences();
-
 </script>
 
 <style scoped>
-/* Para pantallas pequeñas (mobile first) */
 @media (max-width: 767px) {
   .timeline-item::before {
     content: '';

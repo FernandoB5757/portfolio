@@ -1,33 +1,27 @@
 <template>
     <div>
         <section id="welcome-home">
-            <SectionHome />
+            <HomeSectionHome />
         </section>
         
         <section id="about-me" class="limit-elements">
-            <SectionAboutMe hydrate-on-visible />
+            <HomeSectionAboutMe />
         </section>
 
         <section id="my-portfolio" class="limit-elements">
-            <SectionPortfolio hydrate-on-visible />
+            <HomeSectionPortfolio />
         </section>
 
         <section id="my-resume" class="limit-elements">
-            <SectionResume hydrate-on-visible />
+            <HomeSectionResume />
         </section>
 
         <section id="contact-with-me" class="limit-elements">
-            <SectionContactMe />
+            <HomeSectionContactMe />
         </section>
     </div>
 </template>
 <script setup lang="ts">
-import SectionHome from '@/components/home/SectionHome.vue'
-import SectionAboutMe from '@/components/home/SectionAboutMe.vue'
-import SectionPortfolio from '@/components/home/SectionPortfolio.vue'
-import SectionResume from '@/components/home/SectionResume.vue'
-import SectionContactMe from '@/components/home/SectionContactMe.vue'
-
 const { t } = useI18n()
 const img = useImage()
 
