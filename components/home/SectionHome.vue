@@ -50,7 +50,7 @@
                                         {{ $t('hi_welcome') }} <span class="text-primary">Fernando Barajas</span>
                                         <br>
                                         <span> {{ $t('a_welcome') }} </span>
-                                        <AnimationsFlipWords
+                                        <LazyAnimationsFlipWords
                                             :words="[
                                                 $t('Software Engineer'),
                                                 $t('PHP Developer'),
@@ -73,7 +73,7 @@
                                     Find Witth me 
                                 </span> 
                                 <div class="flex flex-row gap-1 sm:gap-3 uppercase">
-                                    <AnimationsCardSpotlight
+                                    <LazyAnimationsCardSpotlight
                                         v-for="(socialLink, key) in socialLinks"
                                         :key="key"
                                         class="cursor-pointer flex-col items-center justify-center whitespace-nowrap shadow-2xl w-14 h-14 "
@@ -92,7 +92,7 @@
                                                 class="dark:text-surface-400 text-surface-500 hover:text-primary text-4xl" 
                                             />
                                         </a>
-                                    </AnimationsCardSpotlight>
+                                    </LazyAnimationsCardSpotlight>
                                 </div>
                             </div>
                             <div class="w-1/2">
@@ -100,7 +100,7 @@
                                     Best Skills on
                                 </span>
                                 <div class="flex flex-row gap-1 sm:gap-3">
-                                    <AnimationsCardSpotlight
+                                    <LazyAnimationsCardSpotlight
                                         v-for="(skills, key) in bestSkills"
                                         :key="key"
                                         class="cursor-pointer flex-col items-center justify-center whitespace-nowrap shadow-2xl w-14 h-14 "
@@ -113,7 +113,7 @@
                                         <Icon :name="skills.icon" 
                                             class="dark:text-surface-400 text-surface-500 hover:text-primary text-4xl" 
                                         />
-                                    </AnimationsCardSpotlight>
+                                    </LazyAnimationsCardSpotlight>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
         </div>
     </div>
     
-    <AnimationsWavyBackground 
+    <LazyAnimationsWavyBackground 
         :colors="[
             '#bfcdfe',
             '#93abfd',

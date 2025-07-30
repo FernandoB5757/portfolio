@@ -34,6 +34,7 @@
                       format="webp"
                       class="details-image"
                       loading="lazy"
+                      fetch-priority="low"  
                     />
                 </template>
                  <template #preview="slotProps">
@@ -43,7 +44,9 @@
                                 style: slotProps.style, 
                                 width: 1280, 
                                 height: 720, 
-                                loading: 'lazy'}" 
+                                loading: 'lazy',
+                                'fetch-priority': 'low'
+                            }" 
                       />
                   </template>
             </Image>

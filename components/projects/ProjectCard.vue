@@ -33,9 +33,10 @@
       </div>
     </div>
 
-    <ProjectDetails 
+    <LazyProjectsProjectDetails 
       :project="project"
       v-model:visible="isOpen"
+      hydrate-on-visible
     />
 
   </article>
@@ -43,13 +44,11 @@
 
 <script setup lang="ts">
 import type { ProjectI18n } from '~/types/project'
-import ProjectDetails from './ProjectDetails.vue';
 
 const props = defineProps<{
   project: ProjectI18n
 }>()
 
-const { t } = useI18n()
 const isOpen = ref(false)
 const technologies = computed(
   () => props.project.technologies.slice(0,4)

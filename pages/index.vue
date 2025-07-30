@@ -5,19 +5,19 @@
         </section>
         
         <section id="about-me" class="limit-elements">
-            <HomeSectionAboutMe />
+            <LazyHomeSectionAboutMe hydrate-on-visible />
         </section>
 
         <section id="my-portfolio" class="limit-elements">
-            <HomeSectionPortfolio />
+            <LazyHomeSectionPortfolio hydrate-on-visible />
         </section>
 
         <section id="my-resume" class="limit-elements">
-            <HomeSectionResume />
+            <LazyHomeSectionResume hydrate-on-visible />
         </section>
 
         <section id="contact-with-me" class="limit-elements">
-            <HomeSectionContactMe />
+            <LazyHomeSectionContactMe hydrate-on-visible />
         </section>
     </div>
 </template>

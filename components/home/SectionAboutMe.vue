@@ -23,6 +23,8 @@
                     class="w-10 h-10"
                     width="40"
                     height="40" 
+                    loading="lazy"
+                    fetch-priority="low"
                 />
             </AnimationsOrbit>
 

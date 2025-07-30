@@ -19,7 +19,7 @@
 
                 <div id="my-portfolio-projects" class="w-full relative">
                     <div class="flex">
-                        <ProjectList :projects="projects" hydrate-on-idle />
+                        <ProjectList :projects="projects" />
                     </div>
                 </div>
 

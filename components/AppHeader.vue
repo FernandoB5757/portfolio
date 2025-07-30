@@ -11,6 +11,8 @@
                         format="webp"
                         width="64"
                         height="64"
+                        loading="lazy"
+                        fetch-priority="low"
                     />
                 </Avatar>
                 <p class="text-xl font-bold">
@@ -44,6 +46,8 @@
                         format="webp"
                         width="64"
                         height="64"
+                        loading="lazy"
+                        fetch-priority="low"
                     />
                 </Avatar>
             </div>
