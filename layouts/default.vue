@@ -18,4 +18,12 @@
 </template>
 
 <script setup>
+    const img = useImage()
+
+    useHead({
+        link: {
+            rel: "icon",
+            href: img('/images/logo.webp')
+        }
+    }) 
 </script>
