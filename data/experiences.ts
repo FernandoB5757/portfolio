@@ -6,7 +6,7 @@ export const experiences: Experience[] = [
     id: 'university',
     order: 4,
     image: {
-      src: '/images/experiences/udg.png',
+      src: '/images/experiences/udg.webp',
       alt: 'UDG - CUCEI',
     },
     date: {
@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
     title: "MT - Softech",
     order: 3,
     image: {
-      src: '/images/experiences/mt-logo.png',
+      src: '/images/experiences/mt-logo.webp',
       alt: 'UDG - MT softech',
     },
     date: {
@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     id: 'cucei',
     order: 2,
     image: {
-      src: '/images/experiences/cucei.png',
+      src: '/images/experiences/cucei.webp',
       alt: 'CUCEI area de desarrollo',
     },
     date: {
@@ -44,7 +44,7 @@ export const experiences: Experience[] = [
     title: 'Netcommerce',
     order: 1,
     image: {
-      src: '/images/experiences/netcommerce.png',
+      src: '/images/experiences/netcommerce.webp',
       alt: 'netcommerce',
     },
     date: {

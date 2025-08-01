@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     id: 'mimo',
     image: {
-      src: '/images/projects/mimo.png',
+      src: '/images/projects/mimo.webp',
       alt: 'landing page mimo',
       width: 1200,
       height: 630
@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 'ekar',
     image: {
-      src: '/images/projects/ekar.png',
+      src: '/images/projects/ekar.webp',
       alt: 'landing page mimo',
       width: 1200,
       height: 630
@@ -62,7 +62,7 @@ export const projects: Project[] = [
   {
     id: 'tubin',
     image: {
-      src: '/images/projects/tubin.png',
+      src: '/images/projects/tubin.webp',
       alt: 'landing page mimo',
       width: 1200,
       height: 630
