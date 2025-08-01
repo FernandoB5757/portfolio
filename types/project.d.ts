@@ -23,5 +23,6 @@ export interface ProjectI18n extends Project{
   title: string
   description: string
   long_description?: string
-  contribution?: string
+  contribution?: string,
+  thumbnail?: string
 }

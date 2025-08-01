@@ -9,9 +9,9 @@
                             rounded
                             shadow-2xl dark:shadow-primary-50/50 shadow-primary-500/50 "></div>
                         </div>
-                        <Image src="/images/me-xl.png"  :pt:preview-mask:class="'lw-full bg-transparent'">
+                        <Image src="/images/me-xl.webp"  :pt:preview-mask:class="'lw-full bg-transparent'">
                             <template #image>
-                                <NuxtPicture src="/images/me-md.png" 
+                                <NuxtPicture src="/images/me-md.webp" 
                                     preload
                                     :img-attrs="{
                                         alt: 'Fernando Barajas', 
@@ -21,7 +21,7 @@
                                 />
                             </template>
                             <template #original="slotProps">
-                                <NuxtPicture src="/images/me-xl.png" 
+                                <NuxtPicture src="/images/me-xl.webp" 
                                     :img-attrs="{
                                         alt: 'Fernando Barajas', 
                                         style: slotProps.style, 

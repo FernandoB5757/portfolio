@@ -3,7 +3,7 @@
     <div class="project-card group">
         <div class="project-picture">
           <NuxtPicture
-            :src="project.image.src"
+            :src="project.thumbnail"
             :imgAttrs="{
               alt : project.image.alt,
               width : project.image.width || 400,

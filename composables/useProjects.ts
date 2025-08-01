@@ -12,7 +12,8 @@ export const useProjects = () => {
       title: t(`projects.${project.id}.title`),
       description: t(`projects.${project.id}.description`),
       long_description: t(`projects.${project.id}.long_description`),
-      contribution: t(`projects.${project.id}.contribution`)
+      contribution: t(`projects.${project.id}.contribution`),
+      thumbnail: `/images/projects/${project.id}_thumb.webp`
     }))
   })
 
