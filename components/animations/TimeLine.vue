@@ -27,11 +27,13 @@
               <div class="card">
                 <NuxtPicture 
                   :src="item.image.src" 
+                  format="webp"
                   :img-attrs="{
                       alt: `image of ${item.image.alt}`, 
                       class: 'h-24 w-auto bg-surface-300 dark:bg-transparent rounded p-2 ' + (index % 2 === 0 ? 'xl:ml-auto' : 'xl:mr-auto'), 
                       height: item.image?.height ?? 150, 
-                      width: item.image?.width ?? 150
+                      width: item.image?.width ?? 150,
+                      loading: 'lazy'
                     }" 
                 />
                 <div class="heading">
